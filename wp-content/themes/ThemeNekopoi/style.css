@@ -4,8 +4,8 @@
     font-family: 'titillium';
     font-style: normal;
     font-weight: 400;
-    src: url(https://alternatifkucingpoi.com/fonts/TitilliumWeb-Regular.eot);
-    src: local("Titillium Web"), local(TitilliumWeb-Regular), url(https://alternatifkucingpoi.com/fonts/TitilliumWeb-Regular.eot) format("embedded-opentype"), url(https://alternatifkucingpoi.com/fonts/TitilliumWeb-Regular.woff) format("woff");
+    src: url(fonts/TitilliumWeb-Regular.eot);
+    src: local("Titillium Web"), local(TitilliumWeb-Regular), url(fonts/TitilliumWeb-Regular.eot) format("embedded-opentype"), url(fonts/TitilliumWeb-Regular.woff) format("woff");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000
 }
 
@@ -13,8 +13,8 @@
     font-family: 'titillium';
     font-style: normal;
     font-weight: 600;
-    src: url(https://alternatifkucingpoi.com/fonts/TitilliumWeb-SemiBold.eot);
-    src: local("Titillium WebSemiBold"), local(TitilliumWeb-SemiBold), url(https://alternatifkucingpoi.com/fonts/TitilliumWeb-SemiBold.eot) format("embedded-opentype"), url(https://alternatifkucingpoi.com/fonts/TitilliumWeb-SemiBold.woff) format("woff");
+    src: url(fonts/TitilliumWeb-SemiBold.eot);
+    src: local("Titillium WebSemiBold"), local(TitilliumWeb-SemiBold), url(fonts/TitilliumWeb-SemiBold.eot) format("embedded-opentype"), url(fonts/TitilliumWeb-SemiBold.woff) format("woff");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000
 }
 
@@ -22,8 +22,8 @@
     font-family: 'titillium';
     font-style: normal;
     font-weight: 700;
-    src: url(https://alternatifkucingpoi.com/fonts/TitilliumWeb-Bold.eot);
-    src: local("Titillium WebBold"), local(TitilliumWeb-Bold), url(https://alternatifkucingpoi.com/fonts/TitilliumWeb-Bold.eot) format("embedded-opentype"), url(https://alternatifkucingpoi.com/fonts/TitilliumWeb-Bold.woff) format("woff");
+    src: url(fonts/TitilliumWeb-Bold.eot);
+    src: local("Titillium WebBold"), local(TitilliumWeb-Bold), url(fonts/TitilliumWeb-Bold.eot) format("embedded-opentype"), url(fonts/TitilliumWeb-Bold.woff) format("woff");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000
 }
 
@@ -775,24 +775,24 @@ input[type=checkbox]:checked~#menu-menu {
     font-family: 'titillium';
     font-style: normal;
     font-weight: 400;
-    src: url(https://alternatifkucingpoi.com/fonts/TitilliumWeb-Regular.eot);
-    src: local("Titillium Web"), local(TitilliumWeb-Regular), url(https://alternatifkucingpoi.com/fonts/TitilliumWeb-Regular.eot) format("embedded-opentype"), url(https://alternatifkucingpoi.com/fonts/TitilliumWeb-Regular.woff) format("woff");
+    src: url(fonts/TitilliumWeb-Regular.eot);
+    src: local("Titillium Web"), local(TitilliumWeb-Regular), url(fonts/TitilliumWeb-Regular.eot) format("embedded-opentype"), url(fonts/TitilliumWeb-Regular.woff) format("woff");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 @font-face {
     font-family: 'titillium';
     font-style: normal;
     font-weight: 600;
-    src: url(https://alternatifkucingpoi.com/fonts/TitilliumWeb-SemiBold.eot);
-    src: local("Titillium WebSemiBold"), local(TitilliumWeb-SemiBold), url(https://alternatifkucingpoi.com/fonts/TitilliumWeb-SemiBold.eot) format("embedded-opentype"), url(https://alternatifkucingpoi.com/fonts/TitilliumWeb-SemiBold.woff) format("woff");
+    src: url(fonts/TitilliumWeb-SemiBold.eot);
+    src: local("Titillium WebSemiBold"), local(TitilliumWeb-SemiBold), url(fonts/TitilliumWeb-SemiBold.eot) format("embedded-opentype"), url(fonts/TitilliumWeb-SemiBold.woff) format("woff");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 @font-face {
     font-family: 'titillium';
     font-style: normal;
     font-weight: 700;
-    src: url(https://alternatifkucingpoi.com/fonts/TitilliumWeb-Bold.eot);
-    src: local("Titillium WebBold"), local(TitilliumWeb-Bold), url(https://alternatifkucingpoi.com/fonts/TitilliumWeb-Bold.eot) format("embedded-opentype"), url(https://alternatifkucingpoi.com/fonts/TitilliumWeb-Bold.woff) format("woff");
+    src: url(fonts/TitilliumWeb-Bold.eot);
+    src: local("Titillium WebBold"), local(TitilliumWeb-Bold), url(fonts/TitilliumWeb-Bold.eot) format("embedded-opentype"), url(fonts/TitilliumWeb-Bold.woff) format("woff");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 html,
@@ -1185,7 +1185,7 @@ body {
     width: 760px;
     height: 90px;
     margin: 13px auto;
-    background: url("wp-content/uploads/2016/06/adsbottompagenav.png");
+    background: url("/wp-content/uploads/2016/06/adsbottompagenav.png");
 }
 .adsgen1 .ads1 .widgettitle {
     display: none;
@@ -1454,7 +1454,7 @@ input[type=checkbox]:checked~#menu-menu {
     margin-right: 12px;
     border: 1px solid #ccc;
     min-height: 600px;
-    background: url('wp-content/uploads/2016/06/adsleft.png');
+    background: url('/wp-content/uploads/2016/06/adsleft.png');
 }
 .ero .rightarea {
     float: left;
@@ -1525,7 +1525,7 @@ input[type=checkbox]:checked~#menu-menu {
     text-transform: uppercase;
     padding: 4px 0;
     margin-bottom: 7px;
-    background: url('wp-content/uploads/2016/06/side.png');
+    background: url('/wp-content/uploads/2016/06/side.png');
     background-color: #333;
     background-size: cover;
     padding: 5px 10px;
@@ -2150,7 +2150,7 @@ input[type=checkbox]:checked~#menu-menu {
     width: 398px;
     display: block;
     float: left;
-    background: url('wp-content/uploads/2016/06/side1.png');
+    background: url('/wp-content/uploads/2016/06/side1.png');
     background-size: 414px;
     border: 1px solid #e97991;
     color: #ffffff;
@@ -2162,7 +2162,7 @@ input[type=checkbox]:checked~#menu-menu {
     display: block;
     width: 125px;
     text-align: left;
-    background: url('wp-content/uploads/2016/06/side.png');
+    background: url('/wp-content/uploads/2016/06/side.png');
     color: #e97991;
     border: 1px solid #e97991;
     background-size: 140px 30px;
@@ -2685,7 +2685,7 @@ input[type=checkbox]:checked~#menu-menu {
     display: block;
     font-size: 14px;
     font-weight: 700;
-    background: url('wp-content/uploads/2016/06/side.png');
+    background: url('/wp-content/uploads/2016/06/side.png');
     background-color: #333;
     background-size: cover;
     color: #fff;
@@ -3453,7 +3453,7 @@ box-shadow: 0 2px 2px rgba(0,
     margin-right: 12px;
     border: 1px solid #ccc;
     min-height: 600px;
-    background: url('wp-content/uploads/2016/06/adsleft.png');
+    background: url('/wp-content/uploads/2016/06/adsleft.png');
 }
 
 .ero .rightarea {
@@ -3529,7 +3529,7 @@ box-shadow: 0 2px 2px rgba(0,
     text-transform: uppercase;
     padding: 4px 0;
     margin-bottom: 7px;
-    background: url('wp-content/uploads/2016/06/side.png');
+    background: url('/wp-content/uploads/2016/06/side.png');
     background-color: #333;
     background-size: cover;
     padding: 5px 10px;
@@ -4269,7 +4269,7 @@ box-shadow: 0 2px 2px rgba(0,
     width: 398px;
     display: block;
     float: left;
-    background: url('wp-content/uploads/2016/06/side1.png');
+    background: url('/wp-content/uploads/2016/06/side1.png');
     background-size: 414px;
     border: 1px solid #e97991;
     color: #ffffff;
@@ -4282,7 +4282,7 @@ box-shadow: 0 2px 2px rgba(0,
     display: block;
     width: 125px;
     text-align: left;
-    background: url('wp-content/uploads/2016/06/side.png');
+    background: url('/wp-content/uploads/2016/06/side.png');
     color: #e97991;
     border: 1px solid #e97991;
     background-size: 140px 30px;
@@ -4890,7 +4890,7 @@ box-shadow: 0 2px 2px rgba(0,
     display: block;
     font-size: 14px;
     font-weight: 700;
-    background: url('wp-content/uploads/2016/06/side.png');
+    background: url('/wp-content/uploads/2016/06/side.png');
     background-color: #333;
     background-size: cover;
     color: #fff;
@@ -5343,7 +5343,7 @@ img.imghi {
 }
 
 .focusbg {
-    background: #000 url(wp-content/uploads/2016/10/vlcsnap-01634.png?w=1280);
+    background: #000 url(/wp-content/uploads/2016/10/vlcsnap-01634.png?w=1280);
     width: 100%;
     height: 54px;
     position: absolute;
@@ -5372,7 +5372,7 @@ img.imghi {
 }
 
 .disable-ad>.bg {
-    background: #000 url(wp-content/uploads/2016/10/vlcsnap-01634.png?w=1280);
+    background: #000 url(/wp-content/uploads/2016/10/vlcsnap-01634.png?w=1280);
     width: 100%;
     height: 420px;
     position: relative;
@@ -6021,3 +6021,5 @@ nav.navigation.pagination {
 .theme-switch .wpnm-button.style-3 .wpnm-button-circle {
   height: 5em;
 }
+
+
