@@ -1,0 +1,6023 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700';
+@font-face {
+    font-family: 'titillium';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/TitilliumWeb-Regular.eot);
+    src: local("Titillium Web"), local(TitilliumWeb-Regular), url(fonts/TitilliumWeb-Regular.eot) format("embedded-opentype"), url(fonts/TitilliumWeb-Regular.woff) format("woff");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000
+}
+
+@font-face {
+    font-family: 'titillium';
+    font-style: normal;
+    font-weight: 600;
+    src: url(fonts/TitilliumWeb-SemiBold.eot);
+    src: local("Titillium WebSemiBold"), local(TitilliumWeb-SemiBold), url(fonts/TitilliumWeb-SemiBold.eot) format("embedded-opentype"), url(fonts/TitilliumWeb-SemiBold.woff) format("woff");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000
+}
+
+@font-face {
+    font-family: 'titillium';
+    font-style: normal;
+    font-weight: 700;
+    src: url(fonts/TitilliumWeb-Bold.eot);
+    src: local("Titillium WebBold"), local(TitilliumWeb-Bold), url(fonts/TitilliumWeb-Bold.eot) format("embedded-opentype"), url(fonts/TitilliumWeb-Bold.woff) format("woff");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    direction: ltr;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none;
+    background: #252525;
+    border-left: 3px solid #2F2F2F;
+    padding: 5px 10px
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+    transition: color .1s linear;
+    -moz-transition: color .1s linear;
+    -webkit-transition: color .1s linear
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+.clear {
+    clear: both
+}
+
+:focus {
+    outline: none
+}
+
+h1 {
+    font-size: 18px
+}
+
+h2 {
+    font-size: 16px
+}
+
+h3 {
+    font-size: 16px
+}
+
+h4 {
+    font-size: 14px
+}
+
+h5 {
+    font-size: 12px
+}
+
+h6 {
+    font-size: 12px
+}
+
+p {
+    margin: 10px 0;
+}
+
+body {
+    color: #333;
+    background-image: url(/wp-content/themes/ThemeNekopoi/images/MaskotLEFT.svg), url(/wp-content/themes/ThemeNekopoi/images/MaskotRIGHT.svg);
+    background-size: auto auto, auto auto;
+    background-repeat: no-repeat;
+    background-position: left center, right center;
+    background-attachment: fixed;
+    font: 14px Pleasewritemeasong, arial;
+    font-stretch: condensed;
+    font-size: 13px;
+    margin: 0 auto;
+    background-color: #eee;
+   
+}
+
+#wrap {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+#content {
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+#headsite {
+    overflow: hidden;
+    float: right;
+}
+
+#headsite .right .adstops .widgettitle {
+    display: none
+}
+
+#headsite .right {
+    float: right
+}
+
+#headsite .right #searchform {
+    margin-top: 5px;
+}
+
+#headsite .right #searchform #s {
+    background: #222;
+    margin-right: -3px;
+    font-family: Pleasewritemeasong;
+    border: 1px solid #323232;
+    padding: 0 5px;
+    color: #DDD;
+    line-height: 25px;
+    width: 200px;
+    border-radius: 4px 0 0 4px;
+    box-shadow: inset 0 1px 1px #000;
+}
+
+#headsite .right #searchform .searchbottom {
+    background: #222;
+    line-height: 23px;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    font-weight: bold;
+    text-shadow: 0 -1px 1px #000;
+    font-size: 12px;
+    font-family: Pleasewritemeasong;
+    text-transform: uppercase;
+    color: #676767;
+    border: 1px solid #353535;
+    border-left: 0px;
+}
+
+.mobileads {
+    display: none;
+    background: url("/wp-content/uploads/2016/06/adsmobile.png");
+    height: 60px;
+    width: 100%;
+    background-size: cover;
+}
+
+.mobileads .ads img {
+    height: 60px;
+    width: 100%;
+}
+
+.mobileadstop {
+    display: none;
+    background: url("/wp-content/uploads/2016/06/adsmobiletop.png");
+    height: 60px;
+    width: 320px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    background-size: cover;
+}
+
+.mobileadstop img {
+    height: 60px;
+    width: 320px;
+}
+
+.mobileadsbottom {
+    display: none;
+    background: url("/wp-content/uploads/2016/06/adsmobilebottom.png");
+    height: 250px;
+    width: 320px;
+    margin: auto;
+    background-size: cover;
+}
+
+.mobileadsbottom img {
+    height: 250px;
+    width: 320px;
+}
+
+#navbar {
+    height: 30px;
+    line-height: 31px;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+    border-bottom: 1px solid #0d0d0d
+}
+
+.center {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 1080px;
+}
+
+#navbar .center .left {
+    float: left;
+    color: #a2a2a2
+}
+
+#navbar .center .right {
+    float: right;
+    color: #a2a2a2
+}
+
+#navbar .center .right span {
+    font-weight: 700;
+    color: #3F75B2
+}
+
+#navbar .center .right a {
+    color: #a2a2a2
+}
+
+#navbar .center .right a:hover {
+    color: #FFF
+}
+
+#header {
+    overflow: hidden;
+    width: 1080px;
+    margin: 0px auto;
+    padding-top: 45px;
+}
+
+#header .logo {
+    float: left;
+    max-width: 299px;
+    margin: 32px 15px;
+}
+
+.adstop {
+    overflow: hidden;
+    padding: 1px;
+    margin: 0 -1px;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.adstop .adshead {
+    float: left;
+    width: 728px;
+    border: 1px solid #0F0E0E;
+    height: 90px;
+    background: #000;
+    margin-right: 10px;
+    box-shadow: 0 1px 1px #000
+}
+
+.adstop .adshead .widgettitle {
+    display: none
+}
+
+.adstop .optads {
+    float: right;
+    border: 1px solid #0F0E0E;
+    width: 248px;
+    height: 90px;
+    background: #000;
+    box-shadow: 0 1px 1px #000
+}
+
+.adspost {
+    overflow: hidden
+}
+
+.adspost .widgettitle {
+    display: none
+}
+
+.adspost .textwidget {
+    text-align: center;
+    border-bottom: 1px solid #323232;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 10px
+}
+
+.ads300 {
+    margin: -1px
+}
+
+.adsfoot {
+    margin: 0 auto;
+    max-width: 728px;
+    border: 1px solid #0F0E0E;
+    height: 90px;
+    background: #000;
+    box-shadow: 0 1px 1px #000
+}
+
+.adsfoot .widgettitle {
+    display: none
+}
+
+.adshome {
+    overflow: hidden;
+    position: relative
+}
+
+.adshome .widgettitle {
+    display: none
+}
+
+.adshome .textwidget {
+    text-align: center;
+    margin-bottom: 10px
+}
+
+.adsgen {
+    overflow: hidden
+}
+
+.adsgen .ads {
+    display: block;
+    width: 728px;
+    height: 90px;
+    margin: 13px auto;
+    background: url("/wp-content/uploads/2016/06/topbg.png");
+}
+
+.adsgen .ads .widgettitle {
+    display: none
+}
+
+.adsgen .ads .textwidget {
+    text-align: center;
+}
+
+.adsgen .ads .textwidget img {
+    width: 728px;
+    height: 90px;
+}
+
+.adsgen1 {
+    display: block;
+    width: 760px;
+    height: 90px;
+    margin: 13px auto;
+    background: url("/wp-content/uploads/2016/06/adsbottompagenav.png");
+}
+
+.adsgen1 .ads1 .widgettitle {
+    display: none
+}
+
+.adsgen1 .ads1 .textwidget {
+    text-align: center;
+}
+
+.adsgen1 .ads1 .textwidget img {
+    width: 728px;
+    height: 90px;
+}
+
+#menu-hp {
+    background: #333;
+    display: none;
+    border-top: 2px solid #e97991;
+}
+
+#menu-hp ul li {
+    background: #333;
+    position: relative;
+    float: left;
+    width: 50%
+}
+
+#menu-hp ul li a {
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 45px;
+    font-weight: 600;
+    padding: 0px 14px;
+}
+
+#menu-hp ul li a:hover {
+    text-decoration: none;
+    background: #e97991;
+    color: #fff
+}
+
+#menu-hp ul .current-menu-item a {
+    background: #e97991;
+    color: #fff
+}
+
+#main-menu {
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    background: #333333!important;
+    position: fixed;
+    z-index: 1095;
+    /* border-bottom:2px solid #e97991; */
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 0 1px 0 rgba(12, 13, 14, 0.1), 0 1px 3px rgba(12, 13, 14, 0.1), 0 4px 20px rgba(12, 13, 14, 0.035), 0 1px 1px rgba(12, 13, 14, 0.025);
+}
+
+#main-menu ul {
+    position: relative;
+    float: left;
+}
+
+#main-menu ul li {
+    float: left;
+    position: relative;
+    background: rgb(51, 51, 51);
+}
+
+#main-menu ul li a {
+    color: rgba(255, 255, 255, 0.82);
+    display: block;
+    text-align: left;
+    line-height: 25px;
+    font-size: 12px;
+    padding: 10px 13px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+#main-menu ul .current-menu-item a {}
+
+#main-menu ul li a:hover::after {
+=: '';
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #e97991;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+}
+
+#main-menu ul li ul {
+    position: absolute;
+    top: 37px;
+    display: none;
+    z-index: 9999;
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4)
+}
+
+#main-menu ul li:hover ul {
+    display: block
+}
+
+#main-menu ul li ul li a {
+    display: block;
+    min-width: 110px;
+    padding: 5px 10px;
+    line-height: 20px;
+    background-color: rgba(0, 0, 0, 0.7)
+}
+
+#main-menu ul li ul li a:hover {
+    background: rgba(0, 0, 0, 0.9)
+}
+
+#main-menu .random {
+    float: right;
+    color: #FFF;
+    text-transform: uppercase;
+    cursor: pointer;
+    line-height: 28px;
+    margin: 6px;
+    font-family: Pleasewritemeasong;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 0 8px;
+    background: #4274B6
+}
+
+#main-menu .random:hover {
+    background: #333;
+    color: ##999;
+    text-decoration: none
+}
+
+.show-menu {
+    display: none;
+    color: #FFF;
+    line-height: 37px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer
+}
+
+input[type=checkbox] {
+    display: none;
+    -webkit-appearance: none
+}
+
+input[type=checkbox]:checked~#menu-menu {
+    display: block;
+    z-index: 9999;
+    background: #222;
+    position: relative
+}
+
+#main-menu form {
+    float: right;
+    overflow: hidden
+}
+
+#main-menu form #s {
+    background: rgb(130, 128, 128);
+    border: 0px;
+    color: #e8e8e8;
+    padding: 8px;
+    -webkit-transition: all .7s ease 0 s;
+    -moz-transition: all .7s ease 0;
+    -o-transition: all .7s ease 0;
+    transition: all .7s ease 0;
+    margin: 7px 0px;
+    border-radius: 2px;
+}
+
+#main-menu form .searchbottom {
+    -webkit-transition: all .7s ease 0 s;
+    -moz-transition: all .7s ease 0;
+    -o-transition: all .7s ease 0;
+    transition: all .7s ease 0;
+    height: 26px;
+    font-size: 11px;
+    font-family: Pleasewritemeasong;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #FFF;
+    background-color: #2C2C2C;
+    background-position: 13px -244px;
+    border: none;
+    float: right;
+    cursor: pointer
+}
+
+.mobilesearch {
+    display: none;
+}
+
+.postsbody .related1 {
+    margin-bottom: 15px;
+    background: #fff;
+    margin-top: -7px;
+}
+
+.postsbody .related1 li {
+    padding: 2px;
+}
+
+.postsbody .related1 li .border1 {
+    float: left;
+    margin-right: 10px;
+    padding-left: 5px;
+}
+
+.postsbody .related1 li .border1 .limiter1 {
+    height: 110px;
+    position: relative;
+    overflow: hidden;
+    padding: 5px 0px 0px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.postsbody .related1 li .rights1 {
+    padding: 3px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.postsbody .related1 li .rights1 .title1 a {
+    color: #333;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.postsbody .related1 li .rights1 .title1 a:hover {
+    color: #C93756
+}
+
+.genhome {}
+
+.genhome span {}
+
+.genhome a {}
+
+.genhome a:hover {}
+
+.rekomendasi {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 40px;
+    background: #333;
+    font-size: 13px;
+    margin: 0;
+    margin-bottom: 0px;
+    padding: 0;
+    letter-spacing: 0px;
+}
+
+.rekomendasi h2 {
+    float: left;
+    font-size: 13px;
+    margin-right: 8px;
+    background: #e97991;
+    color: #fff;
+    padding: 0px 10px;
+}
+
+.rekomendasi a {
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position:
+}
+
+.postsbody {
+    float: left;
+    width: 59em;
+    padding-bottom: 0px;
+@import 'https: //fonts.googleapis.com/css?family=Roboto:300,400,500,700';
+@font-face {
+    font-family: 'titillium';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/TitilliumWeb-Regular.eot);
+    src: local("Titillium Web"), local(TitilliumWeb-Regular), url(fonts/TitilliumWeb-Regular.eot) format("embedded-opentype"), url(fonts/TitilliumWeb-Regular.woff) format("woff");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+    font-family: 'titillium';
+    font-style: normal;
+    font-weight: 600;
+    src: url(fonts/TitilliumWeb-SemiBold.eot);
+    src: local("Titillium WebSemiBold"), local(TitilliumWeb-SemiBold), url(fonts/TitilliumWeb-SemiBold.eot) format("embedded-opentype"), url(fonts/TitilliumWeb-SemiBold.woff) format("woff");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+    font-family: 'titillium';
+    font-style: normal;
+    font-weight: 700;
+    src: url(fonts/TitilliumWeb-Bold.eot);
+    src: local("Titillium WebBold"), local(TitilliumWeb-Bold), url(fonts/TitilliumWeb-Bold.eot) format("embedded-opentype"), url(fonts/TitilliumWeb-Bold.woff) format("woff");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    direction: ltr;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+    background: #252525;
+    border-left: 3px solid #2F2F2F;
+    padding: 5px 10px;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a {
+    color: #333333;
+    text-decoration: none;
+    transition: color .1s linear;
+    -moz-transition: color .1s linear;
+    -webkit-transition: color .1s linear;
+}
+a:hover {
+    text-decoration: underline;
+}
+.clear {
+    clear: both;
+}
+:focus {
+    outline: none;
+}
+h1 {
+    font-size: 18px;
+}
+h2 {
+    font-size: 16px;
+}
+h3 {
+    font-size: 16px;
+}
+h4 {
+    font-size: 14px;
+}
+h5 {
+    font-size: 12px;
+}
+h6 {
+    font-size: 12px;
+}
+p {
+    margin: 10px 0;
+}
+body {
+    color: #333;
+    background-image: url(/wp-content/uploads/2016/06/bgleft3.png), url(/wp-content/uploads/2016/06/bgright3.png);
+    background-size: auto auto, auto auto;
+    background-repeat: no-repeat;
+    background-position: -40px 10px, 1000px 10px;
+    background-attachment: fixed;
+    font: 14px Pleasewritemeasong, arial;
+    font-stretch: condensed;
+    font-size: 13px;
+    margin: 0 auto;
+    background-color: #eee;
+}
+#wrap {
+    width: 1080px;
+    margin: 0 auto;
+}
+#content {
+    overflow: hidden;
+    padding: 10px 0;
+}
+#headsite {
+    overflow: hidden;
+    float: right;
+}
+#headsite .right .adstops .widgettitle {
+    display: none;
+}
+#headsite .right {
+    float: right;
+}
+#headsite .right #searchform {
+    margin-top: 5px;
+}
+#headsite .right #searchform #s {
+    background: #222;
+    margin-right: -3px;
+    font-family: Pleasewritemeasong;
+    border: 1px solid #323232;
+    padding: 0 5px;
+    color: #DDD;
+    line-height: 25px;
+    width: 200px;
+    border-radius: 4px 0 0 4px;
+    box-shadow: inset 0 1px 1px #000;
+}
+#headsite .right #searchform .searchbottom {
+    background: #222;
+    line-height: 23px;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    font-weight: bold;
+    text-shadow: 0 -1px 1px #000;
+    font-size: 12px;
+    font-family: Pleasewritemeasong;
+    text-transform: uppercase;
+    color: #676767;
+    border: 1px solid #353535;
+    border-left: 0px;
+}
+.mobileads {
+    display: none;
+    background: url("/wp-content/uploads/2016/06/adsmobile.png");
+    height: 60px;
+    width: 100%;
+    background-size: cover;
+}
+.mobileads .adsimg {
+    height: 60px;
+    width: 100%;
+}
+.mobileadstop {
+    display: none;
+    background: url("/wp-content/uploads/2016/06/adsmobiletop.png");
+    height: 60px;
+    width: 320px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    background-size: cover;
+}
+.mobileadstopimg {
+    height: 60px;
+    width: 320px;
+}
+.mobileadsbottom {
+    display: none;
+    background: url("/wp-content/uploads/2016/06/adsmobilebottom.png");
+    height: 250px;
+    width: 320px;
+    margin: auto;
+    background-size: cover;
+}
+.mobileadsbottomimg {
+    height: 250px;
+    width: 320px;
+}
+#navbar {
+    height: 30px;
+    line-height: 31px;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+    border-bottom: 1px solid #0d0d0d;
+}
+.center {
+    margin: 0 auto;
+    overflow: hidden;
+}
+#navbar .center .left {
+    float: left;
+    color: #a2a2a2;
+}
+#navbar .center .right {
+    float: right;
+    color: #a2a2a2;
+}
+#navbar .center .rightspan {
+    font-weight: 700;
+    color: #3F75B2;
+}
+#navbar .center .righta {
+    color: #a2a2a2;
+}
+#navbar .center .righta:hover {
+    color: #FFF;
+}
+#header {
+    overflow: hidden;
+    width: 1080px;
+    margin: 0px auto;
+    padding-top: 40px;
+}
+#header .logo {
+    float: left;
+    max-width: 299px;
+    margin: 32px 15px;
+}
+.adstop {
+    overflow: hidden;
+    padding: 1px;
+    margin: 0 -1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.adstop .adshead {
+    float: left;
+    width: 728px;
+    border: 1px solid #0F0E0E;
+    height: 90px;
+    background: #000;
+    margin-right: 10px;
+    box-shadow: 0 1px 1px #000;
+}
+.adstop .adshead .widgettitle {
+    display: none;
+}
+.adstop .optads {
+    float: right;
+    border: 1px solid #0F0E0E;
+    width: 248px;
+    height: 90px;
+    background: #000;
+    box-shadow: 0 1px 1px #000;
+}
+.adspost {
+    overflow: hidden;
+}
+.adspost .widgettitle {
+    display: none;
+}
+.adspost .textwidget {
+    text-align: center;
+    border-bottom: 1px solid #323232;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.ads300 {
+    margin: -1px;
+}
+.adsfoot {
+    margin: 0 auto;
+    max-width: 728px;
+    border: 1px solid #0F0E0E;
+    height: 90px;
+    background: #000;
+    box-shadow: 0 1px 1px #000;
+}
+.adsfoot .widgettitle {
+    display: none;
+}
+.adshome {
+    overflow: hidden;
+    position: relative;
+}
+.adshome .widgettitle {
+    display: none;
+}
+.adshome .textwidget {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.adsgen {
+    overflow: hidden;
+}
+.adsgen .ads {
+    display: block;
+    width: 728px;
+    height: 90px;
+    margin: 13px auto;
+    background: url("/wp-content/uploads/2016/06/topbg.png");
+}
+.adsgen .ads .widgettitle {
+    display: none;
+}
+.adsgen .ads .textwidget {
+    text-align: center;
+}
+.adsgen .ads .textwidgetimg {
+    width: 728px;
+    height: 90px;
+}
+.adsgen1 {
+    display: block;
+    width: 760px;
+    height: 90px;
+    margin: 13px auto;
+    background: url("/wp-content/uploads/2016/06/adsbottompagenav.png");
+}
+.adsgen1 .ads1 .widgettitle {
+    display: none;
+}
+.adsgen1 .ads1 .textwidget {
+    text-align: center;
+}
+.adsgen1 .ads1 .textwidgetimg {
+    width: 728px;
+    height: 90px;
+}
+#menu-hp {
+    background: #333;
+    display: none;
+    border-top: 2px solid #e97991;
+}
+#menu-hpulli {
+    background: #333;
+    position: relative;
+    float: left;
+    width: 50%;
+}
+#menu-hpullia {
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 45px;
+    font-weight: 600;
+    padding: 0px 14px;
+}
+#menu-hpullia:hover {
+    text-decoration: none;
+    background: #e97991;
+    color: #fff;
+}
+#menu-hpul .current-menu-itema {
+    background: #e97991;
+    color: #fff;
+}
+#main-menu {
+    padding: 0px 10.5em;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    background: #333333!important;
+    position: fixed;
+    z-index: 1095;
+    border-bottom: 2px solid #e97991;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16), 0 0px 0px rgba(0, 0, 0, 0.23);
+}
+#main-menuul {
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+#main-menuulli {
+    float: left;
+    position: relative;
+}
+#main-menuullia {
+    color: rgba(255, 255, 255, 0.82);
+    display: block;
+    text-align: left;
+    line-height: 26px;
+    font-size: 12px;
+    padding: 10px 15px;
+    font-family: 'Roboto', sans-serif;
+}
+#main-menuul .current-menu-itema {
+    background: #e97991;
+}
+#main-menuullia:hover {
+    background: #e97991;
+    text-decoration: none;
+    color: #FFF;
+}
+#main-menuulliul {
+    position: absolute;
+    top: 37px;
+    display: none;
+    z-index: 9999;
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+#main-menuulli:hoverul {
+    display: block;
+}
+#main-menuulliullia {
+    display: block;
+    min-width: 110px;
+    padding: 5px 10px;
+    line-height: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#main-menuulliullia:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#main-menu .random {
+    float: right;
+    color: #FFF;
+    text-transform: uppercase;
+    cursor: pointer;
+    line-height: 28px;
+    margin: 6px;
+    font-family: Pleasewritemeasong;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 0 8px;
+    background: #4274B6;
+}
+#main-menu .random:hover {
+    background: #333;
+    color: ##999;
+    text-decoration: none;
+}
+.show-menu {
+    display: none;
+    color: #FFF;
+    line-height: 37px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+}
+input[type=checkbox] {
+    display: none;
+    -webkit-appearance: none;
+}
+input[type=checkbox]:checked~#menu-menu {
+    display: block;
+    z-index: 9999;
+    background: #222;
+    position: relative;
+}
+#main-menuform {
+    float: right;
+    overflow: hidden;
+}
+#main-menuform #s {
+    background: rgb(24, 24, 24);
+    border: 0px;
+    color: #fff;
+    padding: 15px;
+    -webkit-transition: all .7s ease 0 s;
+    -moz-transition: all .7s ease 0;
+    -o-transition: all .7s ease 0;
+    transition: all .7s ease 0;
+}
+#main-menuform .searchbottom {
+    -webkit-transition: all .7s ease 0 s;
+    -moz-transition: all .7s ease 0;
+    -o-transition: all .7s ease 0;
+    transition: all .7s ease 0;
+    height: 26px;
+    font-size: 11px;
+    font-family: Pleasewritemeasong;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #FFF;
+    background-color: #2C2C2C;
+    background-position: 13px -244px;
+    border: none;
+    float: right;
+    cursor: pointer;
+}
+.mobilesearch {
+    display: none;
+}
+.postsbody .related1 {
+    margin-bottom: 15px;
+    background: #fff;
+    margin-top: -7px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16), 0 0px 0px rgba(0, 0, 0, 0.23);
+}
+.postsbody .related1li {
+    padding: 2px;
+}
+.postsbody .related1li .border1 {
+    float: left;
+    margin-right: 10px;
+    padding-left: 5px;
+}
+.postsbody .related1li .border1 .limiter1 {
+    height: 110px;
+    position: relative;
+    overflow: hidden;
+    padding: 5px 0px 0px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+.postsbody .related1li .rights1 {
+    padding: 3px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.postsbody .related1li .rights1 .title1a {
+    color: #333;
+    font-size: 15px;
+    font-weight: 600;
+}
+.postsbody .related1li .rights1 .title1a:hover {
+    color: #C93756;
+}
+.genhome {}
+.genhomespan {}
+.genhomea {}
+.genhomea:hover {}
+.rekomendasi {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 40px;
+    background: #333;
+    font-size: 13px;
+    margin: 0;
+    margin-bottom: 0px;
+    padding: 0;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16), 0 0px 0px rgba(0, 0, 0, 0.23);
+    letter-spacing: 0px;
+}
+.rekomendasih2 {
+    float: left;
+    font-size: 13px;
+    margin-right: 8px;
+    background: #e97991;
+    color: #fff;
+    padding: 0px 10px;
+}
+.rekomendasia {
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: ;
+}
+.postsbody {
+    float: left;
+    width: 70%;
+    padding-bottom: 0px;
+}
+.postsbody .welcome {
+    font-size: 13px;
+    text-align: center;
+    background: #000;
+    line-height: 17px;
+    color: #A9A9A9;
+    box-shadow: 0 1px 1px #000;
+    margin-right: 10px;
+    padding: 10px 8px;
+    margin-bottom: 8px;
+    border: 1px solid #121212;
+}
+.postsbody .welcomeb {
+    text-transform: uppercase;
+}
+.ero {
+    overflow: hidden;
+}
+.ero .leftarea {
+    float: left;
+    width: 160px;
+    margin-right: 12px;
+    border: 1px solid #ccc;
+    min-height: 600px;
+    background: url('/wp-content/uploads/2016/06/adsleft.png');
+}
+.ero .rightarea {
+    float: left;
+    width: 579px;
+    background: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16), 0 0px 0px rgba(0, 0, 0, 0.23);
+    margin-bottom: 5px;
+}
+.releases {
+    background-color: #333;
+    background-size: cover;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.postsbody .releasesh1 {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    padding: 10px 10px;
+    margin-bottom: 7px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.postsbody .releasesh1span {
+    float: right;
+    font-size: 20px;
+    color: #fff;
+    margin-top: -2px;
+}
+.postsbody .relatedli {
+    margin: 0px 16px;
+    padding: 0px;
+    width: 150px;
+    float: left;
+    margin-bottom: 10px;
+    background: #e97991;
+}
+.postsbody .relatedli .border .limiter {
+    width: 183px;
+    height: 110px;
+    overflow: hidden;
+}
+.postsbody .relatedli .rights {
+    padding: 3px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: center;
+}
+.postsbody .relatedli .rights .titlea {
+    color: #fff;
+}
+.postsbody .relatedli .rights .titlea:hover {
+    color: #fff;
+}
+.videoarea {
+    overflow: hidden;
+    background: #fff;
+    margin-top: -7px;
+    padding: 9px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16), 0 0px 0px rgba(0, 0, 0, 0.23);
+}
+.videoareah3 {
+    font-size: 12px;
+    font-weight: 700;
+    color: #a2a2a2;
+    text-transform: uppercase;
+    padding: 4px 0;
+    margin-bottom: 7px;
+    background: url('/wp-content/uploads/2016/06/side.png');
+    background-color: #333;
+    background-size: cover;
+    padding: 5px 10px;
+}
+.videoareaul {
+    margin: 0 -5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.videoareaulli {
+    float: left;
+    margin: 0 2px;
+    width: 183px;
+    height: 110px;
+    overflow: inherit;
+}
+.videoareaulli .fuck {
+    width: 183px;
+    height: 110px;
+    overflow: hidden;
+    position: relative;
+}
+.videoareaulliimg {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.videoareaullih2 {
+    font-size: 11px;
+    line-height: 12px;
+    background: rgb(51, 51, 51);
+    padding: 5px 10px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    bottom: 22px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#boxid {
+    width: 100%;
+    overflow: hidden;
+}
+.eropost {
+    overflow: hidden;
+    padding-bottom: 5px;
+    background: #fff;
+}
+.eropost .eroimg {
+    float: left;
+    margin-right: 5px;
+    padding: 1px;
+    width: 122px;
+    height: 70px;
+    position: relative;
+    overflow: inherit;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-left: 6px;
+}
+.eropost .eroimg .limitero {
+    overflow: hidden;
+}
+.eropost .eroimg .limiteroimg {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 2px;
+}
+.eropost .eroinfo {
+    margin-left: 135px;
+    height: 68px;
+    padding: 2px 5px;
+    line-height: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background: #e97991;
+    color: #fff;
+    padding: 7px 13px;
+    border-bottom: 3px solid #c15f74;
+}
+.eropost .eroinfoh2 {
+    font-size: 13px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.eropost .eroinfoh2a {
+    color: #333333;
+}
+.eropost .eroinfoh2a:hover {
+    color: #e97991;
+}
+.eropost .eroinfospan {
+    display: block;
+    font-size: 13px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 20px;
+}
+.eropost .eroinfospana {
+    color: #ffffff;
+    background: #e97991;
+    padding: 3px 7px;
+    border-radius: 2px;
+}
+.articles {
+    overflow: hidden;
+    position: relative;
+}
+.headpost {
+    overflow: hidden;
+    position: relative;
+}
+.headposth1 {
+    font-weight: 700;
+    float: left;
+    width: 510px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 23px;
+}
+.headpost .bottomtitle {
+    line-height: 15px;
+    color: #838383;
+    font-size: 11px;
+    padding-bottom: 8px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #323232;
+}
+.newzone {
+    overflow: hidden;
+    padding: 5px 10px;
+    background: #fff;
+}
+.newzone .left {
+    float: left;
+}
+.newzone .right {
+    float: right;
+}
+.newzone .right #episodes {
+    font-family: Pleasewritemeasong, arial;
+    color: #333;
+    width: 178px;
+    padding: 1px 3px;
+    background: #fff;
+    border: 1px solid #e97991;
+}
+.kampret {
+    margin-bottom: 10px;
+}
+.contentpost {
+    overflow: hidden;
+    padding: 15px 15px;
+    background: #fff;
+}
+.contentpost .thm {
+    text-align: center;
+}
+.contentpost .thmimg {
+    max-width: 50%;
+    height: auto;
+    margin: 0 10% 20px;
+    border: 2px solid #ccc;
+    padding: 1px;
+}
+.player-embediframe {
+    min-height: 360px;
+    overflow: hidden;
+}
+.player-embedembed {
+    min-height: 350px;
+    overflow: hidden;
+}
+.infovid {
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+    font-size: 13px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #323232;
+}
+.infovid .left {
+    float: left;
+}
+.infovid .leftspan {
+    border-radius: 4px;
+    padding: 3px 10px;
+    color: #a2a2a2;
+    display: block;
+    float: left;
+    margin-right: 5px;
+    border: 1px solid #323232;
+}
+.infovid .leftspana {
+    color: #a2a2a2;
+}
+.infovid .right {
+    float: right;
+}
+.infovid .right .downloada {
+    background: #0A6AB6;
+    color: #FFF;
+    display: block;
+    border-radius: 4px;
+    padding: 0 7px;
+    line-height: 28px;
+}
+.infovid .right .downloada:hover {
+    background: #0783B8;
+    text-decoration: none;
+}
+#tabmenu {
+    overflow: hidden;
+    margin-right: -5px;
+    margin-bottom: 20px;
+}
+#tabmenuli {
+    float: left;
+    margin-right: 4px;
+    width: 49%;
+    border: 1px solid #323232;
+    margin-bottom: 2px;
+    background: #181818;
+}
+#tabmenuli:hover {
+    background: #272727;
+}
+#tabmenulia {
+    display: block;
+    cursor: pointer;
+    padding: 5px;
+    font-weight: bold;
+    color: #919191;
+}
+#tabmenulia:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+#tabmenuliaspan {
+    float: right;
+    background: #272727;
+    color: #919191;
+    border-left: 1px solid #323232;
+    padding: 5px 10px;
+    margin-top: -5px;
+    margin-right: -5px;
+    margin-bottom: -5px;
+}
+.arealinker {
+    padding: 10px 0px;
+    background: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16), 0 0px 0px rgba(0, 0, 0, 0.23);
+}
+.arealinkerspan {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+.arealinker .boxdownload {
+    overflow: hidden;
+    padding-top: .6em;
+}
+.arealinker .boxdownload .liner {
+    width: 48%;
+    float: left;
+    margin: 0px 7.1px 15px;
+}
+.arealinker .boxdownload .liner .name {
+    background: #333;
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: bold;
+}
+.arealinker .boxdownload .liner .listlink {
+    padding: 5px 10px 0px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.09);
+}
+.arealinker .boxdownload .liner .listlinkb {
+    margin-right: 5px;
+    float: left;
+    color: #fff;
+    font-size: 11px;
+    line-height: 19px;
+    padding: 5px 5px;
+    background: #333;
+    display: none;
+}
+.arealinker .boxdownload .liner .listlinkp {}
+.arealinker .boxdownload .liner .listlinka {
+    display: block;
+    float: left;
+    margin: 0px 5px 5px 0px;
+    color: #fff;
+    background: #e97991;
+    padding: 6.5px 10px;
+    border: 1px solid #e97991;
+    border-radius: 2px;
+}
+.arealinker .boxdownload .liner .listlinka:hover {
+    color: #ffffff;
+    background: #dc637d;
+    text-decoration: none;
+    border: 1px solid #ce637a;
+}
+.source {
+    overflow: hidden;
+    padding-top: 5px;
+}
+.sourcespan {
+    float: right;
+    color: #3D8ECB;
+}
+.informas {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    line-height: 15px;
+    border: 1px solid #3C3B36;
+}
+.informasa {
+    color: #e97991;
+}
+.commentareah3 {
+    font-size: 12px;
+    font-weight: 700;
+    color: #6F6F73;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.commentlist {
+    overflow: hidden;
+    margin: 15px 0px;
+}
+.commentlista {
+    color: #747474;
+}
+.commentlistli {
+    overflow: hidden;
+    padding: 10px;
+}
+.commentlistli:nth-child( odd) {
+;
+}
+.commentlistli:nth-child( even) {
+    background: rgba(13, 13, 13, 0.07);
+}
+.commentlistli .comment-authorimg {
+    float: left;
+    width: 32px;
+    height: 32px;
+    margin-right: 7px;
+}
+.commentlistli .comment-author .fn {
+    font-style: normal;
+    font-weight: 700;
+}
+.commentlistli .comment-author .fna {
+    color: #333;
+}
+.commentlistli .comment-author .says {
+    display: none;
+}
+.commentlistli .comment-meta {
+    font-size: 12px;
+    line-height: 17px;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.59);
+}
+.commentlistlip {
+    margin: 15px 0;
+}
+.commentlistli .reply {
+    float: right;
+}
+.commentlistli .replya {
+    display: block;
+    font-weight: 700;
+    color: #fff;
+    font-size: 12px;
+    border: 1px solid #e97991;
+    padding: 4px 10px;
+    background: #e97991;
+    border-radius: 2px;
+}
+.commentlistli .children {
+    margin-left: 20px;
+}
+#respond #comment {
+    width: 96.4%;
+    border: 1px solid #EAEAEA;
+    padding: 10px;
+    color: #333;
+    font-family: Pleasewritemeasong, arial;
+}
+.commentarea #respondh3 {
+    background: none;
+    padding: 0;
+    border-bottom: 0;
+}
+#responda {
+    color: #777;
+}
+#respond #submit {
+    background: #EAEAEA;
+    border: 1px solid #CCC;
+    font-weight: 400;
+    font-family: Pleasewritemeasong, arial;
+    padding: 7px;
+}
+.animeseries {
+    margin-left: 0;
+    margin-right: 0px;
+    padding: 0 5px;
+}
+.animeseriesul {
+    overflow: hidden;
+}
+.animeseriesulli {
+    float: left;
+    padding: 5px;
+    height: 190px;
+    width: 139px;
+}
+.animeseriesulliimg {
+    width: 135px;
+    height: 180px;
+    padding: 1px;
+    box-shadow: 0 10px 6px -9px rgba(0, 0, 0, 0.52);
+}
+.animeseriesulli .title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 400;
+    text-align: center;
+    background: rgb(51, 51, 51);
+    color: #fff;
+    padding: 5px 5px;
+    top: -24px;
+    position: relative;
+    width: 125px;
+    left: 1px;
+}
+.video {
+    width: 100%;
+    overflow: hidden;
+}
+.video .headvid {
+    margin-bottom: 10px;
+}
+.video .headvidh1 {
+    font-size: 15px;
+}
+.video .headvidspan {
+    margin-top: 4px;
+}
+.video .thumbimg {
+    max-width: 70%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 1px;
+    border: 1px solid #3F3E3E;
+    display: block;
+}
+.video .videoarea {
+    margin: 10px 0;
+}
+.animeinfos {
+    float: left;
+    width: 740px;
+}
+.animeinfos .infos {
+    text-align: justify;
+    line-height: 16px;
+    border: 1px solid #DDD;
+    background: #FAFAFA;
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+.animeinfosh2 {
+    font-size: 14px;
+    position: relative;
+    margin-bottom: 5px;
+}
+.animeinfos .tabulasi {
+    border-bottom: 2px solid #e97991;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.animeinfos .tabulasi .tabs {
+    float: left;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 6px 9px;
+}
+.animeinfos .tabulasi .tab1 {
+    background: #e97991;
+    color: #fff;
+}
+.animeinfos .tabulasi .tab1a {
+    color: #fff;
+}
+.animeinfos .tabulasi .tab2 {
+    color: #8B8B8B;
+}
+.animeinfos .tabulasi .tab2a {
+    color: #8B8B8B;
+}
+.animeinfos .imgdesc {
+    overflow: hidden;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.animeinfos .imgdescimg {
+    float: left;
+    width: 150px;
+    height: 210px;
+    padding: 1px;
+    margin-right: 10px;
+}
+.animeinfos .desc {
+    text-align: justify;
+}
+.animeinfos .descp {
+    margin: 0;
+    line-height: 16px;
+}
+.kurung {
+    border: 1px dashed #ccc;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-family: titillium;
+}
+.animeinfos .desc .latestest {
+    display: none;
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 1px;
+    width: 150px;
+    border: 1px solid #323232;
+    text-align: center;
+}
+.animeinfos .desc .latestest .latestheader {
+    background: #191B1A;
+    font-weight: 700;
+    line-height: 27px;
+    font-size: 13px;
+}
+.animeinfos .desc .latestest .latestepisode {
+    line-height: 40px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #F2B51A;
+}
+.animeinfos .desc .latestest .latestnow {
+    line-height: 27px;
+    font-size: 13px;
+}
+.animeinfos .desc .latestest .latestnowa {
+    display: block;
+    background: #323232;
+    color: #E4E4E4;
+    font-weight: 700;
+}
+.animeinfos .desc .latestest .latestnowa:hover {
+    text-decoration: underline;
+}
+.kampret .listinfo {
+    float: left;
+    margin-right: 5%;
+    line-height: 20px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.animeinfos .listinfo {
+    font-size: 13px;
+    margin-bottom: 20px;
+    font-family: titillium;
+    background: rgba(0, 0, 0, 0.03);
+}
+.animeinfos .listinfoullib {
+    display: block;
+    float: left;
+    width: 95px;
+    color: #333;
+}
+.animeinfos .listinfoullia {
+    color: #333;
+}
+.animeinfos .episodelist {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.animeinfos .episodelist .offzone {
+    overflow: hidden;
+    font-size: 14px;
+    margin-bottom: 1px;
+}
+.animeinfos .episodelist .offzone .leftoff {
+    padding: 0 7px;
+    line-height: 28px;
+    width: 398px;
+    display: block;
+    float: left;
+    background: url('/wp-content/uploads/2016/06/side1.png');
+    background-size: 414px;
+    border: 1px solid #e97991;
+    color: #ffffff;
+}
+.animeinfos .episodelist .offzone .rightoff {
+    padding: 0 7px;
+    line-height: 28px;
+    float: left;
+    display: block;
+    width: 125px;
+    text-align: left;
+    background: url('/wp-content/uploads/2016/06/side.png');
+    color: #e97991;
+    border: 1px solid #e97991;
+    background-size: 140px 30px;
+}
+.animeinfos .episodelist .offzone .watch {
+    padding: 0;
+    line-height: 30px;
+    float: left;
+    display: block;
+    width: 185px;
+    text-align: center;
+    background: #e97991;
+    color: #fff;
+}
+.animeinfos .episodelistulli {
+    line-height: 30px;
+    font-size: 12px;
+    margin-bottom: 1px;
+    overflow: hidden;
+    border: 1px dashed #ccc;
+    border-top: 0px;
+}
+.animeinfos .episodelistulli:nth-child( odd) {
+    background: #fff;
+}
+.animeinfos .episodelistullia {
+    color: #e97991;
+    font-size: 14px;
+}
+.animeinfos .episodelistullia:hover {
+    text-decoration: underline;
+}
+.animeinfos .episodelistulli .leftoff {
+    width: 409px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 5px;
+    float: left;
+}
+.animeinfos .episodelistulli .rightoff {
+    color: #e97991;
+    float: left;
+    display: block;
+    width: 129px;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.animeinfos .episodelistulli .watch {
+    float: left;
+    display: block;
+    width: 185px;
+    text-align: center;
+}
+.animeinfos .releasesh1 {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-bottom: 2px solid #3c3b36;
+    margin-bottom: 5px;
+}
+.animeinfos .releasesspan {
+    color: #fff;
+    float: right;
+    font-size: 20px;
+}
+.popular {
+    margin-top: 10px;
+    overflow: hidden;
+    margin-left: -10px;
+}
+.popularli {
+    float: left;
+    width: 320px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.popularliimg {
+    width: 150px;
+    height: 200px;
+    float: left;
+    padding: 2px;
+    border: 1px solid #3C3B36;
+    margin-right: 10px;
+}
+.popularlispan {
+    display: block;
+    font-size: 13px;
+}
+.popularlispana {
+    color: #e97991;
+}
+.related1 {
+    margin: 0;
+}
+.related1li {
+    padding: 5px;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.55);
+}
+.related1li .img {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+.related1li .img .ltd {
+    overflow: hidden;
+    margin-right: 10px;
+}
+.related1li .img .ltdimg {
+    width: 100%;
+    height: 90px;
+}
+.related1li .nf {
+    padding: 10px 5px;
+    line-height: normal;
+    overflow: hidden;
+}
+.related1li .nfh2 {
+    font-size: 13px;
+}
+.related1li .nfh2a {
+    color: #111;
+}
+.related1li .nfh2a:hover {
+    text-decoration: underline;
+}
+#sidebar_right .latestepisodes {
+    padding: 0;
+    margin-top: -5px;
+}
+#sidebar_right .latestepisodesa:hover {
+    text-decoration: none;
+}
+#sidebar_right .latestepisodesli {
+    overflow: hidden;
+    border-bottom: 1px dashed #323232;
+    padding: 5px 0;
+    margin-bottom: 0px;
+}
+#sidebar_right .latestepisodesli:hover {
+    background: #1B1B1B;
+}
+#sidebar_right .latestepisodesli .lefts {
+    float: left;
+}
+#sidebar_right .latestepisodesli .lefts .video {
+    width: 30px;
+    display: block;
+    line-height: 20px;
+    margin-right: 5px;
+    color: #FFF;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+#sidebar_right .latestepisodesli .lefts .Sub {
+    background: #0A6AB6;
+}
+#sidebar_right .latestepisodesli .lefts .RAW {
+    background: #D54900;
+}
+#sidebar_right .latestepisodesli .lefts .Dub {
+    background: #14980C;
+}
+#sidebar_right .latestepisodesli .rights {
+    font-size: 13px;
+    color: #8c8c8c;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.animelist {}
+.nav_apb {
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    margin-top: 3px;
+}
+.nav_apba {
+    display: block;
+    font-weight: 700;
+    padding: 3px 0;
+    width: 23.4px;
+    font-size: 12px;
+    float: left;
+    margin: 1px;
+    color: #fff;
+    border: 1px solid #e97991;
+    background: #e97991;
+    border-radius: 2px;
+}
+.nav_apba:hover {
+    background: #bf536b;
+    text-decoration: none;
+    border: 1px solid #bf536b;
+}
+#a-z {
+    overflow: hidden;
+}
+.letter-group {
+    position: relative;
+    margin-bottom: 10px;
+}
+.letter-cell {
+    font-weight: 700;
+    color: #7E7A7A;
+    font-size: 17px;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.22);
+    margin-bottom: 5px;
+    background: none;
+    padding: 3px;
+    text-transform: uppercase;
+    position: relative;
+}
+.letter-cella {
+    color: #e97991;
+}
+.row-cells {
+    float: left;
+    line-height: 21px;
+    list-style: none;
+    width: 325px;
+    color: #a2a2a2;
+}
+.title-cell {
+    line-height: 21px;
+    font-weight: 300;
+    color: #888;
+    padding-right: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.title-cella {
+    font-size: 13px;
+    color: #333;
+}
+.title-cella:hover {
+    text-decoration: underline;
+    color: #e97991;
+}
+.genres {
+    overflow: hidden;
+    font-size: 13px;
+    margin-top: 5px;
+}
+.genresul {
+    overflow: hidden;
+}
+.genresulli {
+    line-height: 21px;
+    float: left;
+    width: 47.5%;
+    list-style-position: inside;
+    list-style-type: hiragana;
+    margin-right: 6px;
+    margin-bottom: 10px;
+    padding: 5px 0px 5px 10px;
+}
+.genresullia {
+    padding: 5px 0;
+}
+.genresullia:hover {
+    text-decoration: underline;
+    color: #e97991;
+}
+#sidebar_right {
+    float: right;
+    width: 27.8%;
+}
+#sidebar_right .side {
+    margin-bottom: 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16), 0 0px 0px rgba(0, 0, 0, 0.23);
+}
+#sidebar_righth3 {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 10px;
+    color: #fff;
+    background-color: #333;
+    background-size: cover;
+    letter-spacing: 1px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+#sidebar_righth3span {
+    float: right;
+    color: #fff;
+    margin-top: -2px;
+}
+#sidebar_rightul {
+    font-size: 12px;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    background: #fff;
+    padding: 0px 0px;
+}
+#sidebar_rightulli {
+    overflow: hidden;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.15);
+    margin-bottom: 5px;
+    padding-top: 5px;
+}
+#sidebar_rightullia {
+    color: #6F6F6F;
+}
+#sidebar_right .textwidget {
+    color: #7E7E7E;
+}
+#sidebar_right .fanspage {
+    overflow: hidden;
+    width: 307px;
+    margin-top: 0px;
+}
+#widgetfooter {
+    margin: 20px auto 0px;
+    width: 1080px;
+    min-height: 225px;
+    overflow: hidden;
+    padding: 0;
+    font-size: 13px;
+    color: #fff;
+    background: url('http://localhost/wordpress/wp-content/themes/SimpleShare/images/foot.png');
+    background-size: 380px;
+    background-repeat: no-repeat;
+    background-position: right 0px;
+    background-color: #333;
+}
+#widgetfooter .center {
+    position: relative;
+    text-align: left;
+    overflow: hidden;
+    width: 1030px;
+    margin: 0 auto;
+    padding: 0;
+    padding-left: 30px;
+}
+#widgetfooter .widfoot {
+    float: left;
+    width: 313px;
+    margin: 15px 30px 15px 0;
+}
+#widgetfooter .widfooth3 {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    background: #e97991;
+    margin-bottom: 5px;
+}
+#widgetfooter .widfootul {
+    margin: 0;
+}
+#widgetfooter .widfootulli {
+    padding: 1px 0;
+    margin: 0;
+}
+#widgetfooter .widfootullia {
+    color: #a2a2a2;
+}
+#widgetfooter .widfootullia:hover {
+    color: #0085BE;
+}
+#footer {
+    padding-top: 8px;
+    color: #333;
+    padding-bottom: 8px;
+    line-height: 30px;
+    overflow: hidden;
+    font-size: 12px;
+    margin: 0px auto;
+    width: 1080px;
+}
+#footera {
+    color: #e97991;
+    font-weight: 600;
+}
+#footera:hover {
+    text-decoration: underline;
+}
+#footer .inner {
+    padding: 0;
+    margin: 0 auto;
+    font-size: 14px;
+}
+#footer .inner .copyright {
+    float: left;
+}
+#footer .inner .other {
+    float: right;
+}
+#sidebar_rightulli .bor {
+    float: left;
+    padding: 0 10px;
+}
+#sidebar_rightulli .bor .limit {
+    height: 39px;
+    overflow: hidden;
+}
+#sidebar_rightulli .limitimg {
+    width: 39px;
+    height: auto;
+}
+#sidebar_rightulli .right {
+    height: 41px;
+    margin-left: 48px;
+    padding: 1px 5px;
+    font-size: 13px;
+    background: transparent;
+    line-height: 18px;
+}
+#sidebar_rightulli .right .title {
+    display: block;
+    font-weight: 700;
+    color: #e97991;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#sidebar_rightulli .right .titlea {
+    color: #e97991;
+}
+#sidebar_rightulli .right .latest {
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    color: #555;
+}
+#sidebar_rightulli .right .latesta {
+    color: #a2a2a2;
+}
+.pagination {
+    overflow: hidden;
+    margin-top: 5px;
+    line-height: 30px;
+    padding: 3px 15px;
+    padding-bottom: 15px;
+}
+.page {
+    float: left;
+    font-size: 13px;
+}
+.pagespan {
+    background: #e97991;
+    color: #ffffff;
+    padding: 8px;
+    margin-right: 5px;
+    font-weight: 400;
+    border: 1px solid #e97991;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+.page .now {
+    padding: 8px 10px;
+    color: #fff;
+    background: #e97991;
+    border: 1px solid #e97991;
+    font-weight: 400;
+    border-radius: 3px;
+}
+.pagea {
+    padding: 8px 10px;
+    color: #e97991;
+    background: transparent;
+    font-weight: 400;
+    border: 1px solid rgba(233, 121, 145, 0.29);
+    border-radius: 3px;
+}
+.pagea:hover {
+    background: #e97991;
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+}
+.lightSwitcher {
+    position: absolute;
+    z-index: 600;
+    outline: none;
+    text-decoration: none;
+    top: 0;
+    right: 0;
+    color: #949494;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Open Sans;
+    border-radius: 4px;
+    padding: 4px 8px;
+    line-height: 20px;
+    border: 1px solid #373737;
+    background: #181818;
+}
+#shadow {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.93);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    transition: all .5s ease;
+}
+.contentpostiframe,
+.contentpostembed {
+    position: relative;
+    z-index: 102;
+}
+.seriestitle {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    background: url('/wp-content/uploads/2016/06/side.png');
+    background-color: #333;
+    background-size: cover;
+    color: #fff;
+    line-height: 30px;
+    margin: -5px -9px 5px;
+    padding: 0 7px;
+}
+.seriestitle .score {
+    margin: 3px;
+    float: right;
+    line-height: 23px;
+    color: #fff;
+}
+.infseries {
+    overflow: hidden;
+    margin: 5px 0;
+}
+.infseriesimg {
+    float: left;
+    width: 150px;
+    height: 200px;
+    padding: 1px;
+    border: 1px solid #525151;
+    margin-right: 10px;
+}
+.infseries .right {
+    font-size: 12px;
+    line-height: 18px;
+    color: #fff;
+}
+.infseries .rightspan {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.infseries .rightb {
+    color: #fff;
+}
+.infseries .righta {
+    color: #fff;
+}
+.infseries .right .deskrip {
+    border-top: 1px dashed #515151;
+    display: block;
+    margin-top: 5px;
+    padding-top: 5px;
+    margin-left: 168px;
+}
+.infseries .right .deskripp {
+    margin: 0;
+}
+.result {}
+.resultul {
+    overflow: hidden;
+}
+.resultulli {
+    position: relative;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.19);
+}
+.resultulli .top {
+    overflow: hidden;
+    padding: 10px;
+}
+.resultulli .top .limitnjg {
+    width: 140px;
+    height: 100px;
+    overflow: hidden;
+    float: left;
+    margin-right: 10px;
+}
+.resultulli .topimg {
+    width: 100%;
+    height: auto;
+}
+.resultulli .toph2a {
+    font-size: 14px;
+}
+.resultulli .toph2span {
+    float: right;
+    font-size: 11px;
+    font-weight: 700;
+    color: #e97991;
+    padding: 5px;
+    border: 1px solid #e97991;
+}
+.resultulli .top .genrea {
+    color: #e97991;
+    font-size: 13px;
+}
+.resultulli .top .desc {
+    height: 70px;
+    overflow: overlay;
+}
+.resultulli .top .descp {
+    margin: 0;
+}
+.resultulli .bot {
+    padding: 7px 10px;
+    background: #fff;
+    overflow: hidden;
+    background: #333;
+}
+.resultulli .bot .tap {
+    color: #fff;
+    display: block;
+    float: left;
+}
+.resultulli .bot .view {
+    width: 140px;
+    padding-right: 2px;
+}
+.resultulli .bot .eps {
+    width: 100px;
+}
+.resultulli .bot .status {
+    width: 140px;
+}
+.resultulli .bot .score {
+    width: 200px;
+}
+@-moz-document url-prefix() {
+    .related ul li .foot {
+        bottom: 2px;
+        width: 94.2%;
+    }
+    #main-menu ul li a {
+        padding: 11px 15px;
+    }
+}
+@media only screen and ( max-width: 600px) {
+    body {
+        background-image: none;
+    }
+    #tabmenu li {
+        width: 98.7%;
+    }
+    .postsbody .related1 li .border1 {
+        display: none;
+    }
+    #menu-hp {
+        display: block;
+        background: #fff;
+    }
+    .show-menu {
+        display: none;
+    }
+    #menu-hp ul li {
+        position: relative;
+        width: 50%;
+        float: left;
+    }
+    #main-menu {
+        display: none;
+    }
+    #headsite,
+    #main-menu form,
+    #vslider_optionscontainer,
+    .adshome,
+    #sidebar_right,
+    #widgetfooter,
+    .qtip,
+    #navbar .center .left,
+    #header {
+        display: none;
+    }
+    #header .logo {
+        float: none;
+        text-align: center;
+    }
+    #header .logo img {
+        height: auto;
+        width: 50%;
+    }
+    .postsbody {
+        float: none;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    #boxid {
+        width: 100%;
+      
+        overflow: hidden;
+    }
+    .postlist {
+        width: 47%;
+        height: 140px;
+    }
+    .postlist img {
+        width: 100%;
+        min-height: 50%;
+    }
+    #footer {
+        width: 100%;
+    }
+    #footer .inner {
+        padding: 0;
+        width: 100%;
+        line-height: 19px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    #footer .inner .copyright {
+        float: none;
+    }
+    #footer .inner .other {
+        float: none;
+    }
+    #navbar .center {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+    #navbar .center .right {
+        float: none;
+    }
+    .animeinfo .left {
+        float: none;
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 5px;
+        margin-right: 0;
+        overflow: hidden;
+        border-right: 0;
+    }
+    .animeinfo .right {
+        float: right;
+        width: 100%;
+        height: auto;
+    }
+    .headpost h1 {
+        width: 200px;
+        font-size: 14px;
+    }
+    .ero .rightarea {
+        width: 100%;
+    }
+    .newzone .left #episodes {
+        width: 130px;
+    }
+    .player-embed iframe {
+        min-height: 250px;
+        max-height: 300px;
+        overflow: hidden;
+    }
+    .dogs {
+        display: none;
+    }
+    .newzone .right span {
+        font-size: 11px;
+    }
+    .ui-tabs-nav li {
+        float: left;
+        width: 33%;
+    }
+    .ui-tabs-nav li .thumb {
+        width: 93%;
+        margin: 5px;
+        max-height: 100px;
+        position: relative;
+        overflow: hidden;
+    }
+    .ui-tabs-nav li .thumb .infoz .viewer {
+        color: #FFF;
+        width: 64%;
+        font-size: 8px;
+        text-align: center;
+        padding: 4px 8px;
+        text-transform: uppercase;
+        background: #333;
+        float: left;
+    }
+    .ui-tabs-nav li .thumb .infoz .status {
+        color: #FFF;
+        background: #0095D5;
+        float: right;
+        text-align: center;
+        padding: 2px 4px;
+        width: 15%;
+        text-transform: uppercase;
+    }
+    .postlist .footerpost {
+        width: 100%;
+    }
+    .postlist .footerpost h2 {
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        padding: 22% 30%;
+        font-size: 12px;
+        font-style: italic;
+        color: #FFF;
+    }
+    .animeseries ul li {
+        float: left;
+        padding: 5px;
+        margin: 5px;
+    }
+    .animeseries ul li img {}
+    .infovid .left span {
+        border-radius: 4px;
+        padding: 3px 2px;
+    }
+    #wrap {
+        padding: 0;
+        width: 100%;
+        margin-top: 10px;
+        border: 1px transparent;
+    }
+    .adsgen,
+    .anipost .thumb:hover .play {
+        display: none;
+    }
+    .adsgen1 {
+        display: none;
+    }
+    .contentpost .thm img {
+        max-width: 80%;
+    }
+    .animeinfos .imgdesc img {
+        float: none;
+        margin: 10px 30%;
+    }
+    .animeinfos .listinfo {
+        margin-left: 0px;
+    }
+    .center {
+        margin: 0 auto;
+        width: 100%;
+        overflow: hidden;
+        background: #333;
+    }
+    .anipost {
+        width: 47%;
+    }
+    .anipost .title,
+    .anipost .thumb {
+        width: 100%;
+    }
+    .anipost .thumb .border,
+    .anipost .thumb .imgrapi img {
+        width: 99%;
+    }
+    .kampret .listinfo {
+        float: none;
+    }
+    .newzone .right {
+        float: none;
+    }
+    .newzone .left {
+        float: none;
+    }
+    .newzone .left #episodes {
+        width: 100%;
+    }
+    .animeinfos {
+        float: none;
+        width: 100%;
+    }
+    .animeinfos .desc .latestest,
+    .animeinfos .episodelist .offzone .watch,
+    .animeinfos .episodelist .offzone .rightoff,
+    .animeinfos .episodelist ul li .rightoff,
+    .animeinfos .episodelist ul li .watch {
+        display: none;
+    }
+    .animeinfos .episodelist .offzone .leftoff,
+    .animeinfos .episodelist ul li .leftoff {
+        width: 100%;
+    }
+    .nav_apb a {
+        width: 25px;
+    }
+    .eropost .eroimg {}
+    .ero .leftarea {
+        display: none;
+    }
+    .eropost .eroinfo {
+        margin-left: 0px;
+    }
+    .postsbody .related li {
+        margin: 5px 3px;
+        width: 129px;
+    }
+    .postsbody .related li .border .limiter {
+        width: 100%;
+    }
+    .postsbody .related li .border .limiter img {
+        width: 100%;
+        height: auto;
+    }
+    .videoarea ul li {
+        float: none;
+        width: 100%;
+        height: 52px;
+        margin: 0 2px;
+        overflow: hidden;
+        margin-bottom: 5px;
+    }
+    .videoarea ul li .fuck {
+        width: 80px;
+        height: 50px;
+        float: left;
+    }
+    .videoarea ul li img {
+        float: left;
+        width: 80px;
+        height: auto;
+        margin-bottom: 0;
+    }
+    .videoarea ul li h2 {
+        font-size: 13px;
+        line-height: 13px;
+        position: inherit;
+        text-align: left;
+        margin-left: 85px;
+        width: auto;
+        background: #fff;
+        color: #333;
+        padding: 18px 6px;
+    }
+    .videoarea ul li {
+        float: none;
+        width: 100%;
+        border-bottom: 1px solid rgba(31, 30, 30, 0.14);
+        margin: 0 2px;
+        overflow: hidden;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+    }
+    .animeseries ul li .title {
+        top: -25px;
+    }
+    .arealinker .boxdownload .liner {
+        width: 100%;
+    }
+    .mobilesearch {
+        display: block;
+        overflow: hidden;
+        background: #171717;
+        padding: 4px;
+    }
+    .mobilesearch #searchform {
+        margin: 0 auto;
+        width: 99%;
+        background: #171717;
+        padding: 6px;
+    }
+    .mobilesearch #searchform #s {
+        border: 0;
+        background: none;
+        font-family: tahoma;
+        width: 84%;
+        padding: 3px;
+        color: #fff;
+    }
+    .mobilesearch #searchform .searchbottom {
+        border: 0;
+        font-family: tahoma;
+        background: #333;
+        color: #999;
+        padding: 3px 8px;
+    }
+    .mobileads {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .mobileads .ads {
+        margin: 0 auto;
+    }
+    .mobileadstop {
+        display: block;
+    }
+    .mobileadstop .adstop {
+        width: 300px;
+        margin: 0 auto;
+    }
+    .mobileadsbottom {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .mobileadsbottom .adsbottom {
+        width: 300px;
+        margin: 0 auto;
+    }
+    .rekomendasi {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+.postsbody .related1li .border1 .limiter1aimg {
+    border: 14px;
+}
+.postsbody .related1li .border1 .limiter1a>img {
+    border-radius: 4px;
+}
+.videoareaullia:hover {
+    color: #fff;
+}
+.animeseriesullia {
+    color: #fff;
+}
+.center_notfound {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 220px 0;
+    font-size: 48px;
+    font-weight: 200;
+    font-family: comic sans ms;
+}
+.listinfoulli {
+    padding: 5px 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+.listlinkp {
+    margin: 0;
+}
+img.lazy {
+    background: url('') no-repeat;
+    background-position: center 45px;
+}
+img.lazyside {
+    background: url('') no-repeat;
+    background-position: center;
+    height: 100%;
+}
+:: -webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-border-radius: 100px;
+}
+:: -webkit-scrollbar:hover {
+    background-color: rgba(0, 0, 0, 0.09);
+}
+:: -webkit-scrollbar-thumb:vertical {
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 100px;
+    background-clip: padding-box;
+    border: 2px solid rgba(0, 0, 0, 0);
+    min-height: 10px;
+}
+:: -webkit-scrollbar-thumb:vertical:active {
+    background: rgba(0, 0, 0, 0.61);
+    -webkit-border-radius: 100px;
+}
+.showtickerul {
+    height: 0;
+}
+.tipsy {
+    font-size: 10px;
+    position: absolute;
+    padding: 5px;
+    z-index: 100000;
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+}
+.infoarea {
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+    position: absolute;
+    z-index: 10;
+    padding: 5px;
+    width: 470px;
+    min-height: 10px;
+    background-color: #e97991;
+    min-width: 10px;
+}
+.infoareah2 {
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-left: -5px;
+    margin-right: -5px;
+    padding: 5px 10px 0px;
+}
+.areabaru {
+    background-color: #111;
+    padding: 10px;
+    overflow: auto;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -10px;
+}
+.areabaru .gambars {
+    width: 130px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+}
+.areabaru .gambarsimg {
+    width: 120px;
+    height: auto;
+    float: left;
+}
+.areabaru .areadetail {
+    width: 310px;
+    float: left;
+}
+.areadetailp {
+    font-size: 11px;
+    font-weight: normal;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    line-height: 19px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.areadetailpa {
+    color: #FFF;
+}
+.areadetailb {
+    font-weight: bold;
+    display: inline-block;
+    width: 120px;
+    color: #CCC;
+}
+.sinop {
+    font-size: 11px;
+    font-weight: normal;
+    max-width: 500px;
+    color: #FFF;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: solid 1px #999999;
+}
+.tooltip {
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+    position: absolute;
+    width: 320px;
+    background-image: url(../images/tip-bg.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    color: #FFF;
+    padding: 5px 5px 5px 18px;
+    font-size: 11px;
+}
+.tooltip-image {
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+.tooltipspan {
+    font-weight: 700;
+    color: #ffea00;
+}
+.show-stream {
+    width: auto;
+    margin: 0px 0 0px;
+    background: #fff;
+}
+.show-stream>.text {
+    background: #333;
+    padding: 5px 10px;
+    color: #fff;
+    font-weight: bold;
+}
+.show-stream>.list {
+    padding: 25px 10px 0px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.09);
+}
+.show-stream>.lista {
+    display: block;
+    float: left;
+    margin: 0px 5px 5px 0px;
+    color: #fff;
+    background: #e97991;
+    padding: 6.5px 10px;
+    border: 1px solid #e97991;
+    border-radius: 2px;
+}
+.show-stream>.open-stream {
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.2);
+}
+.show-stream>.list>p {
+    margin: 0;
+}
+.disable-ad {
+    color: #000;
+    background: #e8e8e8;
+    text-align: center;
+    display: block;
+    padding: 20%;
+    font-size: 25px;
+    display: none;
+}
+.dogs {
+    background: #e97991;
+    padding: 0;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16), 0 0px 0px rgba(0, 0, 0, 0.23);
+}
+.commentarea {
+    background: #fff;
+    padding: 0px 10px;
+    margin-top: -20px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16), 0 0px 0px rgba(0, 0, 0, 0.23);
+    margin-bottom: 2px;
+}
+ul.related {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16), 0 0px 0px rgba(0, 0, 0, 0.23);
+}
+.classbg {
+    background: #fff;
+    height: 140px;
+    margin-bottom: 55px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16), 0 0px 0px rgba(0, 0, 0, 0.23);
+}
+box-shadow: 0 2px 2px rgba(0,
+0,
+0,
+0.16),
+0 0px 0px rgba(0,
+0,
+0,
+0.23);
+/* box-shadow: 0 2px 2px rgba(0,0,0,0.16), 0 0px 0px rgba(0,0,0,0.23); */
+}
+
+.postsbody .welcome {
+    font-size: 13px;
+    text-align: center;
+    background: #000;
+    line-height: 17px;
+    color: #A9A9A9;
+    box-shadow: 0 1px 1px #000;
+    margin-right: 10px;
+    padding: 10px 8px;
+    margin-bottom: 8px;
+    border: 1px solid #121212
+}
+
+.postsbody .welcome b {
+    text-transform: uppercase
+}
+
+.ero {
+    overflow: hidden;
+}
+
+.ero .leftarea {
+    float: left;
+    width: 160px;
+    margin-right: 12px;
+    border: 1px solid #ccc;
+    min-height: 600px;
+    background: url('/wp-content/uploads/2016/06/adsleft.png');
+}
+
+.ero .rightarea {
+    float: left;
+    width: 593px;
+    background: #fff;
+    margin-bottom: 5px;
+}
+
+.releases {
+    background-color: #333;
+    background-size: cover;
+}
+
+.postsbody .releases h1 {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    padding: 10px 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 7px;
+}
+
+.postsbody .releases h1 span {
+    float: right;
+    font-size: 20px;
+    color: #fff;
+    margin-top: -2px;
+}
+
+.postsbody .related li {
+    padding: 10px;
+    float: left;
+    width: 25%;
+}
+
+.postsbody .related li .border .limiter {
+    overflow: hidden;
+    float: left;
+    padding-right: 5px;
+}
+
+.postsbody .related li .rights {
+    padding: 3px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    float: left;
+    width: 100px;
+    height: 29px;
+}
+
+.postsbody .related li .rights .title a {
+    color: #333;
+}
+
+.postsbody .related li .rights .title a:hover {
+    color: #333;
+}
+
+.videoarea {
+    overflow: hidden;
+    background: #fff;
+    margin-top: -7px;
+    padding: 9px;
+}
+
+.videoarea h3 {
+    font-size: 12px;
+    font-weight: 700;
+    color: #a2a2a2;
+    text-transform: uppercase;
+    padding: 4px 0;
+    margin-bottom: 7px;
+    background: url('/wp-content/uploads/2016/06/side.png');
+    background-color: #333;
+    background-size: cover;
+    padding: 5px 10px;
+}
+
+.videoarea ul {
+    margin: 0 -5px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.videoarea ul li {
+    float: left;
+    margin: 0px 3px;
+    width: 183px;
+    height: 110px;
+    overflow: inherit;
+}
+
+.videoarea ul li .fuck {
+    width: 183px;
+    height: 110px;
+    overflow: hidden;
+    position: relative;
+}
+
+.videoarea ul li img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.videoarea ul li h2 {
+    font-size: 11px;
+    line-height: 12px;
+    background: rgb(51, 51, 51);
+    padding: 5px 10px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    bottom: 22px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#boxid {
+    width: 100%;
+    overflow: hidden;
+    margin-top: -7px;
+}
+
+.eropost {
+    overflow: hidden;
+    background: #fff;
+    padding: 10px 5px 0px;
+}
+
+.eropost .eroimg {
+    float: left;
+    margin-right: 5px;
+    padding: 1px;
+    width: 122px;
+    height: 70px;
+    position: relative;
+    overflow: inherit;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    margin-left: 6px;
+}
+
+.eropost .eroimg .limitero {
+    overflow: hidden;
+}
+
+.eropost .eroimg .limitero img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 2px;
+}
+
+.eropost .eroinfo {
+    margin-left: 135px;
+    height: 68px;
+    padding: 2px 5px;
+    line-height: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 10px 13px;
+    z-index: 2000;
+}
+
+.eropost .eroinfo h2 {
+    font-size: 13px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.eropost .eroinfo h2 a {
+    color: #333333;
+}
+
+.eropost .eroinfo h2 a:hover {
+    color: #e97991;
+}
+
+.eropost .eroinfo span {
+    display: block;
+    font-size: 13px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden!important;
+    text-overflow: ellipsis;
+    padding: 3px 0px;
+    border-radius: 2px;
+}
+
+.eropost .eroinfo span a {
+    color: #ffffff;
+    background: #e97991;
+    padding: 3px 7px;
+}
+
+.articles {
+    overflow: hidden;
+    position: relative;
+}
+
+.headpost {
+    overflow: hidden;
+    position: relative;
+}
+
+.headpost h1 {
+    font-weight: 700;
+    float: left;
+    width: 510px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 23px;
+    z-index: 2000;
+    opacity: 1;
+}
+
+.headpost .bottomtitle {
+    line-height: 15px;
+    color: #838383;
+    font-size: 11px;
+    padding-bottom: 8px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #323232
+}
+
+.newzone {
+    overflow: hidden;
+    padding: 5px 10px;
+    background: #fff;
+}
+
+.newzone .left {
+    float: left
+}
+
+.newzone .right {
+    float: right
+}
+
+.newzone .right #episodes {
+    font-family: Pleasewritemeasong, arial;
+    color: #333;
+    width: 178px;
+    padding: 1px 3px;
+    background: #fff;
+    border: 1px solid #e97991
+}
+
+.kampret {
+    margin-bottom: 10px;
+}
+
+.contentpost {
+    overflow: hidden;
+    padding: 15px 15px;
+    background: #fff;
+}
+
+.contentpost .thm {
+    text-align: center;
+}
+
+.contentpost .thm img {
+    max-width: 50%;
+    height: auto;
+    margin: 0 10% 20px;
+    border: 2px solid #ccc;
+    padding: 1px;
+}
+
+.player-embed iframe {
+    min-height: 360px;
+    overflow: hidden
+}
+
+.player-embed embed {
+    min-height: 350px;
+    overflow: hidden
+}
+
+.infovid {
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+    font-size: 13px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #323232
+}
+
+.infovid .left {
+    float: left
+}
+
+.infovid .left span {
+    border-radius: 4px;
+    padding: 3px 10px;
+    color: #a2a2a2;
+    display: block;
+    float: left;
+    margin-right: 5px;
+    border: 1px solid #323232
+}
+
+.infovid .left span a {
+    color: #a2a2a2
+}
+
+.infovid .right {
+    float: right
+}
+
+.infovid .right .download a {
+    background: #0A6AB6;
+    color: #FFF;
+    display: block;
+    border-radius: 4px;
+    padding: 0 7px;
+    line-height: 28px
+}
+
+.infovid .right .download a:hover {
+    background: #0783B8;
+    text-decoration: none
+}
+
+#tabmenu {
+    overflow: hidden;
+    margin-right: -5px;
+    margin-bottom: 20px;
+}
+
+#tabmenu li {
+    float: left;
+    margin-right: 4px;
+    width: 49%;
+    border: 1px solid #323232;
+    margin-bottom: 2px;
+    background: #181818;
+}
+
+#tabmenu li:hover {
+    background: #272727;
+}
+
+#tabmenu li a {
+    display: block;
+    cursor: pointer;
+    padding: 5px;
+    font-weight: bold;
+    color: #919191;
+}
+
+#tabmenu li a:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#tabmenu li a span {
+    float: right;
+    background: #272727;
+    color: #919191;
+    border-left: 1px solid #323232;
+    padding: 5px 10px;
+    margin-top: -5px;
+    margin-right: -5px;
+    margin-bottom: -5px;
+}
+
+.arealinker {
+    background: #fff;
+}
+
+.arealinker span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.arealinker .boxdownload {
+    overflow: hidden;
+    padding-top:.6em;
+}
+
+.arealinker .boxdownload .liner {
+    width: 48%;
+    float: left;
+    margin: 0px 7.1px 15px;
+}
+
+.arealinker .boxdownload .liner .name {
+    background: #333;
+    padding: 8px 10px;
+    color: #fff;
+}
+
+.arealinker .boxdownload .liner .listlink {
+    padding: 10px 10px 5px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.09);
+}
+
+.arealinker .boxdownload .liner .listlink b {
+    margin-right: 5px;
+    float: left;
+    color: #fff;
+    font-size: 11px;
+    line-height: 19px;
+    padding: 5px 5px;
+    background: #333;
+    display: none;
+}
+
+.arealinker .boxdownload .liner .listlink p {}
+
+.arealinker .boxdownload .liner .listlink a {
+    display: block;
+    float: left;
+    margin: 0px 5px 5px 0px;
+    color: #fff;
+    background: #e97991;
+    padding: 6.5px 10px;
+    border: 1px solid #e97991;
+    border-radius: 2px;
+}
+
+.arealinker .boxdownload .liner .listlink a:hover {
+    color: #ffffff;
+    background: #dc637d;
+    text-decoration: none;
+    border: 1px solid #ce637a;
+}
+
+.source {
+    overflow: hidden;
+    padding-top: 5px;
+}
+
+.source span {
+    float: right;
+    color: #3D8ECB;
+}
+
+.informas {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    line-height: 15px;
+    border: 1px solid #3C3B36
+}
+
+.informas a {
+    color: #e97991;
+}
+
+.commentarea h3 {
+    font-size: 12px;
+    font-weight: 700;
+    color: #6F6F73;
+    text-transform: uppercase;
+    margin-bottom: 0
+}
+
+.commentlist {
+    overflow: hidden;
+    margin: 15px 0px;
+}
+
+.commentlist a {
+    color: #747474
+}
+
+.commentlist li {
+    overflow: hidden;
+    padding: 10px
+}
+
+.commentlist li:nth-child(odd) {}
+
+.commentlist li:nth-child(even) {
+    background: rgba(13, 13, 13, 0.07);
+}
+
+.commentlist li .comment-author img {
+    float: left;
+    width: 32px;
+    height: 32px;
+    margin-right: 7px
+}
+
+.commentlist li .comment-author .fn {
+    font-style: normal;
+    font-weight: 700
+}
+
+.commentlist li .comment-author .fn a {
+    color: #333
+}
+
+.commentlist li .comment-author .says {
+    display: none
+}
+
+.commentlist li .comment-meta {
+    font-size: 12px;
+    line-height: 17px;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.59);
+}
+
+.commentlist li p {
+    margin: 15px 0
+}
+
+.commentlist li .reply {
+    float: right
+}
+
+.commentlist li .reply a {
+    display: block;
+    font-weight: 700;
+    color: #fff;
+    font-size: 12px;
+    border: 1px solid #e97991;
+    padding: 4px 10px;
+    background: #e97991;
+    border-radius: 2px;
+}
+
+.commentlist li .children {
+    margin-left: 20px
+}
+
+#respond #comment {
+    width: 96.4%;
+    border: 1px solid #EAEAEA;
+    padding: 10px;
+    color: #333;
+    font-family: Pleasewritemeasong, arial
+}
+
+.commentarea #respond h3 {
+    background: none;
+    padding: 0;
+    border-bottom: 0
+}
+
+#respond a {
+    color: #777
+}
+
+#respond #submit {
+    background: #EAEAEA;
+    border: 1px solid #CCC;
+    font-weight: 400;
+    font-family: Pleasewritemeasong, arial;
+    padding: 7px;
+}
+
+.animeseries {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.animeseries ul {
+    overflow: hidden;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.animeseries ul li {
+    float: left;
+    width: 20%;
+}
+
+.animeseries ul li img {
+    width: 125px;
+    height: 160px;
+}
+
+.animeseries ul li .title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 400;
+    text-align: center;
+    background: rgb(51, 51, 51);
+    color: #fff;
+    padding: 5px 5px;
+    bottom: 0px;
+    position: relative;
+    width: 115px;
+    box-shadow: 0 10px 9px -9px rgba(0, 0, 0, 0.52);
+}
+
+.video {
+    width: 100%;
+    overflow: hidden;
+}
+
+.video .headvid {
+    margin-bottom: 10px;
+}
+
+.video .headvid h1 {
+    font-size: 15px;
+}
+
+.video .headvid span {
+    margin-top: 4px;
+}
+
+.video .thumb img {
+    max-width: 70%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 1px;
+    border: 1px solid #3F3E3E;
+    display: block;
+}
+
+.video .videoarea {
+    margin: 10px 0;
+}
+
+.animeinfos {
+    float: left;
+    width: 740px;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16), 0 0px 0px rgba(0, 0, 0, 0.23);
+}
+
+.animeinfos .infos {
+    text-align: justify;
+    line-height: 16px;
+    border: 1px solid #DDD;
+    background: #FAFAFA;
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 5px
+}
+
+.animeinfos h2 {
+    font-size: 14px;
+    position: relative;
+    margin-bottom: 5px
+}
+
+.animeinfos .tabulasi {
+    border-bottom: 2px solid #e97991;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.animeinfos .tabulasi .tabs {
+    float: left;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 6px 9px
+}
+
+.animeinfos .tabulasi .tab1 {
+    background: #e97991;
+    color: #fff;
+}
+
+.animeinfos .tabulasi .tab1 a {
+    color: #fff
+}
+
+.animeinfos .tabulasi .tab2 {
+    color: #8B8B8B
+}
+
+.animeinfos .tabulasi .tab2 a {
+    color: #8B8B8B
+}
+
+.animeinfos .imgdesc {
+    overflow: hidden;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.animeinfos .imgdesc img {
+    float: left;
+    width: 150px;
+    height: 210px;
+    padding: 1px;
+    margin-right: 10px;
+}
+
+.animeinfos .desc {
+    text-align: justify
+}
+
+.animeinfos .desc p {
+    margin: 0;
+    line-height: 16px
+}
+
+.kurung {
+    border: 1px dashed #ccc;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-family: titillium;
+}
+
+.animeinfos .desc .latestest {
+    display: none;
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 1px;
+    width: 150px;
+    border: 1px solid #323232;
+    text-align: center
+}
+
+.animeinfos .desc .latestest .latestheader {
+    background: #191B1A;
+    font-weight: 700;
+    line-height: 27px;
+    font-size: 13px
+}
+
+.animeinfos .desc .latestest .latestepisode {
+    line-height: 40px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #F2B51A
+}
+
+.animeinfos .desc .latestest .latestnow {
+    line-height: 27px;
+    font-size: 13px
+}
+
+.animeinfos .desc .latestest .latestnow a {
+    display: block;
+    background: #323232;
+    color: #E4E4E4;
+    font-weight: 700
+}
+
+.animeinfos .desc .latestest .latestnow a:hover {
+    text-decoration: underline
+}
+
+.kampret .listinfo {
+    float: left;
+    margin-right: 5%;
+    line-height: 20px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.animeinfos .listinfo {
+    font-size: 13px;
+    margin-bottom: 20px;
+    font-family: titillium;
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.animeinfos .listinfo ul li b {
+    display: block;
+    float: left;
+    width: 95px;
+    color: #333
+}
+
+.animeinfos .listinfo ul li a {
+    color: #333
+}
+
+.animeinfos .episodelist {
+    margin-top: 5px;
+    margin-bottom: 15px
+}
+
+.animeinfos .episodelist .offzone {
+    overflow: hidden;
+    font-size: 14px;
+    margin-bottom: 1px;
+}
+
+.animeinfos .episodelist .offzone .leftoff {
+    padding: 0 7px;
+    line-height: 28px;
+    width: 398px;
+    display: block;
+    float: left;
+    background: url('/wp-content/uploads/2016/06/side1.png');
+    background-size: 414px;
+    border: 1px solid #e97991;
+    color: #ffffff;
+}
+
+.animeinfos .episodelist .offzone .rightoff {
+    padding: 0 7px;
+    line-height: 28px;
+    float: left;
+    display: block;
+    width: 125px;
+    text-align: left;
+    background: url('/wp-content/uploads/2016/06/side.png');
+    color: #e97991;
+    border: 1px solid #e97991;
+    background-size: 140px 30px;
+}
+
+.animeinfos .episodelist .offzone .watch {
+    padding: 0;
+    line-height: 30px;
+    float: left;
+    display: block;
+    width: 185px;
+    text-align: center;
+    background: #e97991;
+    color: #fff
+}
+
+.animeinfos .episodelist ul li {
+    line-height: 30px;
+    font-size: 12px;
+    margin-bottom: 1px;
+    overflow: hidden;
+    border: 1px dashed #ccc;
+    border-top: 0px
+}
+
+.animeinfos .episodelist ul li:nth-child(odd) {
+    background: #fff;
+}
+
+.animeinfos .episodelist ul li a {
+    color: #e97991;
+    font-size: 14px;
+}
+
+.animeinfos .episodelist ul li a:hover {
+    text-decoration: underline
+}
+
+.animeinfos .episodelist ul li .leftoff {
+    width: 409px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 5px;
+    float: left
+}
+
+.animeinfos .episodelist ul li .rightoff {
+    color: #e97991;
+    float: left;
+    display: block;
+    width: 129px;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.animeinfos .episodelist ul li .watch {
+    float: left;
+    display: block;
+    width: 185px;
+    text-align: center
+}
+
+.animeinfos .releases h1 {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-bottom: 2px solid #3c3b36;
+    margin-bottom: 5px
+}
+
+.animeinfos .releases span {
+    color: #fff;
+    float: right;
+    font-size: 20px
+}
+
+.popular {
+    margin-top: 10px;
+    overflow: hidden;
+    margin-left: -10px
+}
+
+.popular li {
+    float: left;
+    width: 320px;
+    margin-left: 10px;
+    margin-bottom: 10px
+}
+
+.popular li img {
+    width: 150px;
+    height: 200px;
+    float: left;
+    padding: 2px;
+    border: 1px solid #3C3B36;
+    margin-right: 10px
+}
+
+.popular li span {
+    display: block;
+    font-size: 13px
+}
+
+.popular li span a {
+    color: #e97991
+}
+
+.related1 {
+    margin: 0;
+}
+
+.related1 li {
+    padding: 5px;
+    overflow: hidden;
+}
+
+.related1 li .img {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.related1 li .img .ltd {
+    overflow: hidden;
+    margin-right: 10px
+}
+
+.related1 li .img .ltd img {
+    width: 100%;
+    height: 90px;
+}
+
+.related1 li .nf {
+    padding: 10px 5px;
+    line-height: normal;
+    overflow: hidden;
+}
+
+.related1 li .nf h2 {
+    font-size: 13px
+}
+
+.related1 li .nf h2 a {
+    color: #111
+}
+
+.related1 li .nf h2 a:hover {
+    text-decoration: underline
+}
+
+#sidebar_right .latestepisodes {
+    padding: 0;
+    margin-top: -5px
+}
+
+#sidebar_right .latestepisodes a:hover {
+    text-decoration: none
+}
+
+#sidebar_right .latestepisodes li {
+    overflow: hidden;
+    border-bottom: 1px dashed #323232;
+    padding: 5px 0;
+    margin-bottom: 0px
+}
+
+#sidebar_right .latestepisodes li:hover {
+    background: #1B1B1B
+}
+
+#sidebar_right .latestepisodes li .lefts {
+    float: left
+}
+
+#sidebar_right .latestepisodes li .lefts .video {
+    width: 30px;
+    display: block;
+    line-height: 20px;
+    margin-right: 5px;
+    color: #FFF;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center
+}
+
+#sidebar_right .latestepisodes li .lefts .Sub {
+    background: #0A6AB6
+}
+
+#sidebar_right .latestepisodes li .lefts .RAW {
+    background: #D54900
+}
+
+#sidebar_right .latestepisodes li .lefts .Dub {
+    background: #14980C
+}
+
+#sidebar_right .latestepisodes li .rights {
+    font-size: 13px;
+    color: #8c8c8c;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.animelist {
+    width: 100%;
+}
+
+.nav_apb {
+    padding: 10px;
+    margin: 0;
+    background: #e97991;
+    text-align: center;
+}
+
+.nav_apb a {
+    display: block;
+    font-weight: 700;
+    padding: 3px 10px;
+    font-size: 12px;
+    float: left;
+    color: #fff;
+    background: #e97991;
+    text-align: center;
+}
+
+.nav_apb a:hover {
+    background: #bf536b;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+#a-z {
+    overflow: hidden;
+}
+
+.letter-group {
+    position: relative;
+    margin-bottom: 10px
+}
+
+.letter-cell {
+    font-weight: 700;
+    color: #7E7A7A;
+    font-size: 17px;
+    /* border-bottom: 1px solid rgba(51, 51, 51, 0.22); */
+    margin-bottom: 5px;
+    background: none;
+    padding: 3px 10px;
+    text-transform: uppercase;
+    position: relative;
+    background: rgba(247, 244, 244, 0.45);
+}
+
+.letter-cell a {
+    color: #e97991
+}
+
+.row-cells {
+    float: left;
+    line-height: 21px;
+    list-style: none;
+    width: 325px;
+    color: #a2a2a2;
+    padding: 0 10px;
+}
+
+.title-cell {
+    line-height: 21px;
+    font-weight: 300;
+    color: #888;
+    padding-right: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.title-cell a {
+    font-size: 13px;
+    color: #333
+}
+
+.title-cell a:hover {
+    text-decoration: underline;
+    color: #e97991
+}
+
+.genres {
+    overflow: hidden;
+    font-size: 13px;
+    margin-top: 5px
+}
+
+.genres ul {
+    overflow: hidden
+}
+
+.genres ul li {
+    line-height: 21px;
+    float: left;
+    width: 47.5%;
+    list-style-position: inside;
+    list-style-type: hiragana;
+    margin-right: 6px;
+    margin-bottom: 10px;
+    padding: 5px 0px 5px 10px;
+}
+
+.genres ul li a {
+    padding: 5px 0
+}
+
+.genres ul li a:hover {
+    text-decoration: underline;
+    color: #e97991
+}
+
+#sidebar_right {
+    float: right;
+    width: 27.8%;
+}
+
+#sidebar_right .side {
+    margin-bottom: 10px;
+}
+
+#sidebar_right h3 {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 10px;
+    color: #fff;
+    background-color: #333;
+    background-size: cover;
+    letter-spacing: 1px;
+}
+
+#sidebar_right h3 span {
+    float: right;
+    color: rgb(238, 238, 238);
+}
+
+#sidebar_right ul {
+    font-size: 12px;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    background: #fff;
+    padding: 0px 0px;
+}
+
+#sidebar_right ul li {
+    overflow: hidden;
+    padding-bottom: 5px;
+    padding-top: 7px;
+}
+
+#sidebar_right ul li a {
+    color: #6F6F6F
+}
+
+#sidebar_right .textwidget {
+    color: #7E7E7E
+}
+
+#sidebar_right .fanspage {
+    overflow: hidden;
+    width: 307px;
+    margin-top: 0px;
+    padding-bottom: 5px;
+    background: #f6f7f9;
+}
+
+#widgetfooter {
+    margin: 20px auto 0px;
+    width: 1080px;
+    min-height: 225px;
+    overflow: hidden;
+    padding: 0;
+    font-size: 13px;
+    color: #fff;
+    background: url('http://localhost/wordpress/wp-content/themes/SimpleShare/images/foot.png');
+    background-size: 380px;
+    background-repeat: no-repeat;
+    background-position: right 0px;
+    background-color: #333;
+}
+
+#widgetfooter .center {
+    position: relative;
+    text-align: left;
+    overflow: hidden;
+    width: 1030px;
+    margin: 0 auto;
+    padding: 0;
+    padding-left: 30px
+}
+
+#widgetfooter .widfoot {
+    float: left;
+    width: 313px;
+    margin: 15px 30px 15px 0
+}
+
+#widgetfooter .widfoot h3 {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    background: #e97991;
+    margin-bottom: 5px
+}
+
+#widgetfooter .widfoot ul {
+    margin: 0
+}
+
+#widgetfooter .widfoot ul li {
+    padding: 1px 0;
+    margin: 0
+}
+
+#widgetfooter .widfoot ul li a {
+    color: #a2a2a2
+}
+
+#widgetfooter .widfoot ul li a:hover {
+    color: #0085BE
+}
+
+#footer {
+    padding-top: 8px;
+    color: #333;
+    padding-bottom: 8px;
+    line-height: 30px;
+    overflow: hidden;
+    font-size: 12px;
+    margin: 0px auto;
+    width: 1080px
+}
+
+#footer a {
+    color: #e97991;
+    font-weight: 600;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+#footer .inner {
+    padding: 0;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+#footer .inner .copyright {
+    float: left
+}
+
+#footer .inner .other {
+    float: right
+}
+
+#sidebar_right ul li .bor {
+    float: left;
+    padding: 0 10px;
+}
+
+#sidebar_right ul li .bor .limit {
+    height: 39px;
+    overflow: hidden
+}
+
+#sidebar_right ul li .limit img {
+    width: 39px;
+    height: auto
+}
+
+#sidebar_right ul li .right {
+    height: 41px;
+    margin-left: 48px;
+    padding: 1px 5px;
+    font-size: 13px;
+    background: transparent;
+    line-height: 18px;
+}
+
+#sidebar_right ul li .right .title {
+    display: block;
+    font-weight: 700;
+    color: #e97991;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+#sidebar_right ul li .right .title a {
+    color: #e97991;
+}
+
+#sidebar_right ul li .right .latest {
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    color: #555
+}
+
+#sidebar_right ul li .right .latest a {
+    color: #a2a2a2
+}
+
+.pagination {
+    overflow: hidden;
+    line-height: 15px;
+    padding: 10px 15px;
+    padding-bottom: 10px;
+    background: #f7a2b4;
+}
+
+.page {
+    float: left;
+    font-size: 13px;
+}
+
+.page span {
+    background: #f7a2b4;
+    color: #ffffff;
+    padding: 8px;
+    margin-right: 5px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.page .now {
+    padding: 5px 10px;
+    color: #fff;
+    background: #e97991;
+    border: 1px solid #e97991;
+    font-weight: 400;
+}
+
+.page a {
+    padding: 5px 10px;
+    color: #ffffff;
+    background: transparent;
+    font-weight: 400;
+    -moz-border-radius: 50%;
+}
+
+.page a:hover {
+    background: #e97991;
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none
+}
+
+.lightSwitcher {
+    position: absolute;
+    z-index: 600;
+    outline: none;
+    text-decoration: none;
+    top: 0;
+    right: 0;
+    color: #949494;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Open Sans;
+    border-radius: 4px;
+    padding: 4px 8px;
+    line-height: 20px;
+    border: 1px solid #373737;
+    background: #181818;
+}
+
+#shadow {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.93);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    transition: all .5s ease
+}
+
+.contentpost iframe,
+.contentpost embed {
+    position: relative;
+    z-index: 102
+}
+
+.seriestitle {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    background: url('/wp-content/uploads/2016/06/side.png');
+    background-color: #333;
+    background-size: cover;
+    color: #fff;
+    line-height: 30px;
+    margin: -5px -9px 5px;
+    padding: 0 7px
+}
+
+.seriestitle .score {
+    margin: 3px;
+    float: right;
+    line-height: 23px;
+    color: #fff
+}
+
+.infseries {
+    overflow: hidden;
+    margin: 5px 0
+}
+
+.infseries img {
+    float: left;
+    width: 150px;
+    height: 200px;
+    padding: 1px;
+    border: 1px solid #525151;
+    margin-right: 10px
+}
+
+.infseries .right {
+    font-size: 12px;
+    line-height: 18px;
+    color: #fff
+}
+
+.infseries .right span {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.infseries .right b {
+    color: #fff
+}
+
+.infseries .right a {
+    color: #fff
+}
+
+.infseries .right .deskrip {
+    border-top: 1px dashed #515151;
+    display: block;
+    margin-top: 5px;
+    padding-top: 5px;
+    margin-left: 168px
+}
+
+.infseries .right .deskrip p {
+    margin: 0
+}
+
+.result {}
+
+.result ul {
+    overflow: hidden
+}
+
+.result ul li {
+    position: relative;
+    /* margin-bottom: 10px; */
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.19); */
+    padding: 10px;
+}
+
+.result ul li .top {
+    overflow: hidden;
+    padding: 3px 10px;
+}
+
+.result ul li .top .limitnjg {
+    width: 140px;
+    height: 100px;
+    overflow: hidden;
+    float: left;
+    margin-right: 10px;
+}
+
+.result ul li .top img {
+    width: 100%;
+    height: auto
+}
+
+.result ul li .top h2 a {
+    font-size: 14px
+}
+
+.result ul li .top h2 span {
+    float: right;
+    font-size: 11px;
+    font-weight: 700;
+    color: #e97991;
+    padding: 5px;
+    border: 1px solid #e97991;
+}
+
+.result ul li .top .genre a {
+    color: #e97991;
+    font-size: 13px
+}
+
+.result ul li .top .desc {
+    height: 70px;
+    overflow: overlay;
+}
+
+.result ul li .top .desc p {
+    margin: 0
+}
+
+.result ul li .bot {
+    padding: 7px 10px;
+    background: #fff;
+    overflow: hidden;
+    background: #333;
+}
+
+.result ul li .bot .tap {
+    color: #fff;
+    display: block;
+    float: left
+}
+
+.result ul li .bot .view {
+    width: 140px;
+    padding-right: 2px
+}
+
+.result ul li .bot .eps {
+    width: 100px
+}
+
+.result ul li .bot .status {
+    width: 140px
+}
+
+.result ul li .bot .score {
+    width: 200px
+}
+
+@-moz-document url-prefix() {
+    .related ul li .foot {
+        bottom: 2px;
+        width: 94.2%;
+    }
+    #main-menu ul li a {
+        padding: 11px 15px;
+    }
+}
+
+.postsbody .related1 li .border1 .limiter1 a img {
+    border: 14px;
+}
+
+.postsbody .related1 li .border1 .limiter1 a>img {
+    border-radius: 4px;
+}
+
+.videoarea ul li a:hover {
+    color: #fff;
+}
+
+.animeseries ul li a {
+    color: #fff;
+}
+
+.center_notfound {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 220px 0;
+    font-size: 48px;
+    font-weight: 200;
+    font-family: comic sans ms;
+}
+
+.listinfo ul li {
+    padding: 5px 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.listlink p {
+    margin: 0;
+}
+
+img.lazy {
+    background: url('') no-repeat;
+    background-position: center 45px;
+}
+
+img.lazyside {
+    background: url('') no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-border-radius: 100px;
+}
+
+::-webkit-scrollbar:hover {
+    background-color: rgba(0, 0, 0, 0.09);
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 100px;
+    background-clip: padding-box;
+    border: 2px solid rgba(0, 0, 0, 0);
+    min-height: 10px;
+}
+
+::-webkit-scrollbar-thumb:vertical:active {
+    background: rgba(0, 0, 0, 0.61);
+    -webkit-border-radius: 100px;
+}
+
+.showticker ul {
+    height: 0;
+}
+
+.tipsy {
+    font-size: 10px;
+    position: absolute;
+    padding: 5px;
+    z-index: 100000;
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+}
+
+.infoarea {
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+    position: absolute;
+    z-index: 10;
+    padding: 5px;
+    width: 470px;
+    min-height: 10px;
+    background-color: #616161;
+    min-width: 10px;
+    margin-top: 16px;
+}
+
+.infoarea h2 {
+    color: #e6e6e6;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-left: -5px;
+    margin-right: -5px;
+    padding: 3px 10px 0px;
+}
+
+.areabaru {
+    background-color: #111;
+    padding: 10px;
+    overflow: auto;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -10px;
+}
+
+.areabaru .gambars {
+    width: 130px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.areabaru .gambars img {
+    width: 120px;
+    height: auto;
+    float: left;
+}
+
+.areabaru .areadetail {
+    width: 310px;
+    float: left;
+}
+
+.areadetail p {
+    font-size: 13px;
+    font-weight: normal;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    line-height: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.areadetail p a {
+    color: #FFF;
+}
+
+.areadetail b {
+    font-weight: normal;
+    display: inline-block;
+    width: 120px;
+    color: #CCC;
+}
+
+.sinop {
+    font-size: 11px;
+    font-weight: normal;
+    max-width: 500px;
+    color: #FFF;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: solid 1px #999999;
+}
+
+.tooltip {
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+    position: absolute;
+    width: 320px;
+    background-image: url(../images/tip-bg.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    color: #FFF;
+    padding: 5px 5px 5px 18px;
+    font-size: 11px;
+}
+
+.tooltip-image {
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+
+.tooltip span {
+    font-weight: 700;
+    color: #ffea00;
+}
+
+.show-stream {
+    width: auto;
+    margin: 0px 0 0px;
+    background: #fff;
+}
+
+.show-stream>.text {
+    background: #333;
+    padding: 10px 10px;
+    color: #fff;
+    z-index: 1094;
+    position: absolute;
+    width: 100%;
+    margin-top: -15px;
+}
+
+.show-stream>.list {
+    padding: 25px 10px 0px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: rgba(0, 0, 0, 0.09);
+}
+
+.show-stream>.list a {
+    display: block;
+    float: left;
+    margin: 0px 5px 5px 0px;
+    color: #fff;
+    background: #e97991;
+    padding: 6.5px 10px;
+    border: 1px solid #e97991;
+    border-radius: 2px;
+}
+
+.show-stream>.open-stream {
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.show-stream>.list>p {
+    margin: 0;
+}
+
+.disable-ad {
+    color: #ececec;
+    text-align: center;
+    display: block;
+    padding: 160px 0;
+    font-size: 25px;
+    display: none;
+    letter-spacing: 2px;
+    height: 135px;
+    z-index: 2000;
+    width: 100%;
+}
+
+.dogs {
+    background: #e97991;
+    margin-bottom: 10px;
+}
+
+.commentarea {
+    background: #fff;
+    padding: 0px 10px;
+    margin-top: -20px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16), 0 0px 0px rgba(0, 0, 0, 0.23);
+    margin-bottom: 2px;
+}
+
+ul.related {
+    background: #fff;
+    /* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16), 0 0px 0px rgba(0, 0, 0, 0.23); */
+    padding-left: 0;
+    display: flex;
+    margin: 10px;
+}
+
+.classbg {
+    background: #fff;
+    height: 100%;
+    /* box-shadow: 0 2px 2px rgba(0, 0, 0, 0.16), 0 0px 0px rgba(0, 0, 0, 0.23); */
+    display: inline-table;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+img.imghi {
+    width: 115px;
+    padding-top: 11px;
+    padding-right: 10px;
+    display: none;
+}
+
+.focusbg {
+    background: #000 url(/wp-content/uploads/2016/10/vlcsnap-01634.png?w=1280);
+    width: 100%;
+    height: 54px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.4;
+    z-index: 1000;
+    background-color: #000;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(2px);
+    background-position: center;
+}
+
+.focustext {
+    z-index: 1095;
+    display: block;
+    opacity: 1;
+    background: transparent;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-shadow: 1px 1px 5px #504f4f;
+}
+
+.disable-ad>.bg {
+    background: #000 url(/wp-content/uploads/2016/10/vlcsnap-01634.png?w=1280);
+    width: 100%;
+    height: 420px;
+    position: relative;
+    top: -151px;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(6px);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.disable-ad>.disabled {
+    position: relative;
+    top: -571px;
+    padding: 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.35);
+    background: rgba(0, 0, 0, 0.38);
+    width: 100%;
+    left: -20px;
+    height: 390px;
+    text-align: center;
+}
+
+.disable-ad>.disabled>p {
+    margin-top: 185px;
+}
+
+.ico {
+    width: 0;
+}
+
+#main-menu ul .current-menu-item a::after {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #e97991;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+}
+
+.infoarea::before {
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid #616161;
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: 2em;
+}
+
+#sidebar_right .side::before {
+    content: '';
+    position: absolute;
+    width: 157px;
+    height: 40px;
+    background-position: 0px -4px;
+    margin-left: 143px;
+}
+
+#sidebar_right ul li:hover {
+    background: #f7f4f4;
+}
+
+.eropost:hover {
+    background: #f7f4f4;
+}
+
+.postbody .related1 li:hover {
+    background: #f7f4f4;
+}
+
+.related1 li .nf:hover {}
+
+.postsbody .related1 li:hover {
+    background: #f7f4f4;
+}
+
+.postsbody .related li .border .limiter a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-image: none;
+    }
+    #tabmenu li {
+        width: 98.7%;
+    }
+    .postsbody .related1 li .border1 {
+        display: none;
+    }
+    #menu-hp {
+        display: block;
+        background: #fff
+    }
+    .show-menu {
+        display: none;
+    }
+    #menu-hp ul li {
+        position: relative;
+        width: 50%;
+        float: left;
+    }
+    #main-menu {
+        display: none;
+    }
+    #headsite,
+    #main-menu form,
+    #vslider_optionscontainer,
+    .adshome,
+    #sidebar_right,
+    #widgetfooter,
+    .qtip,
+    #navbar .center .left,
+    #header {
+        display: none
+    }
+    #header .logo {
+        float: none;
+        text-align: center
+    }
+    #header .logo img {
+        height: auto;
+        width: 50%
+    }
+    .postsbody {
+        float: none;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    #boxid {
+        width: 100%;
+     
+        overflow: hidden
+    }
+    .postlist {
+        width: 47%;
+        height: 140px
+    }
+    .postlist img {
+        width: 100%;
+        min-height: 50%
+    }
+    #footer {
+        width: 100%
+    }
+    #footer .inner {
+        padding: 0;
+        width: 100%;
+        line-height: 19px;
+        text-align: center;
+        margin: 0 auto
+    }
+    #footer .inner .copyright {
+        float: none
+    }
+    #footer .inner .other {
+        float: none
+    }
+    #navbar .center {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center
+    }
+    #navbar .center .right {
+        float: none
+    }
+    .animeinfo .left {
+        float: none;
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 5px;
+        margin-right: 0;
+        overflow: hidden;
+        border-right: 0
+    }
+    .animeinfo .right {
+        float: right;
+        width: 100%;
+        height: auto
+    }
+    .headpost h1 {
+        width: 200px;
+        font-size: 14px
+    }
+    .ero .rightarea {
+        width: 100%
+    }
+    .newzone .left #episodes {
+        width: 130px
+    }
+    .player-embed iframe {
+        min-height: 250px;
+        max-height: 300px;
+        overflow: hidden
+    }
+    .dogs {
+        display: none;
+    }
+    .newzone .right span {
+        font-size: 11px
+    }
+    .ui-tabs-nav li {
+        float: left;
+        width: 33%
+    }
+    .ui-tabs-nav li .thumb {
+        width: 93%;
+        margin: 5px;
+        max-height: 100px;
+        position: relative;
+        overflow: hidden
+    }
+    .ui-tabs-nav li .thumb .infoz .viewer {
+        color: #FFF;
+        width: 64%;
+        font-size: 8px;
+        text-align: center;
+        padding: 4px 8px;
+        text-transform: uppercase;
+        background: #333;
+        float: left
+    }
+    .ui-tabs-nav li .thumb .infoz .status {
+        color: #FFF;
+        background: #0095D5;
+        float: right;
+        text-align: center;
+        padding: 2px 4px;
+        width: 15%;
+        text-transform: uppercase
+    }
+    .postlist .footerpost {
+        width: 100%
+    }
+    .postlist .footerpost h2 {
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        padding: 22% 30%;
+        font-size: 12px;
+        font-style: italic;
+        color: #FFF
+    }
+    .animeseries ul li {
+        float: left;
+        padding: 5px;
+        margin: 5px;
+    }
+    .animeseries ul li img {}
+    .infovid .left span {
+        border-radius: 4px;
+        padding: 3px 2px
+    }
+    #wrap {
+        padding: 0;
+        width: 100%;
+        margin-top: 10px;
+        border: 1px transparent;
+    }
+    .adsgen,
+    .anipost .thumb:hover .play {
+        display: none
+    }
+    .adsgen1 {
+        display: none;
+    }
+    .contentpost .thm img {
+        max-width: 80%
+    }
+    .animeinfos .imgdesc img {
+        float: none;
+        margin: 10px 30%;
+    }
+    .animeinfos .listinfo {
+        margin-left: 0px
+    }
+    .center {
+        margin: 0 auto;
+        width: 100%;
+        overflow: hidden;
+        background: #333
+    }
+    .anipost {
+        width: 47%
+    }
+    .anipost .title,
+    .anipost .thumb {
+        width: 100%
+    }
+    .anipost .thumb .border,
+    .anipost .thumb .imgrapi img {
+        width: 99%
+    }
+    .kampret .listinfo {
+        float: none;
+    }
+    .newzone .right {
+        float: none;
+    }
+    .newzone .left {
+        float: none
+    }
+    .newzone .left #episodes {
+        width: 100%
+    }
+    .animeinfos {
+        float: none;
+        width: 100%
+    }
+    .animeinfos .desc .latestest,
+    .animeinfos .episodelist .offzone .watch,
+    .animeinfos .episodelist .offzone .rightoff,
+    .animeinfos .episodelist ul li .rightoff,
+    .animeinfos .episodelist ul li .watch {
+        display: none
+    }
+    .animeinfos .episodelist .offzone .leftoff,
+    .animeinfos .episodelist ul li .leftoff {
+        width: 100%
+    }
+    .nav_apb a {
+        width: 25px
+    }
+    .eropost .eroimg {}
+    .ero .leftarea {
+        display: none
+    }
+    .eropost .eroinfo {
+        margin-left: 0px
+    }
+    ul.related {
+        display: block;
+        height: 100%;
+        box-shadow: none;
+        padding-top: 5px;
+    }
+    .postsbody .related li {
+        width: 100%;
+        float: left;
+    }
+    .postsbody .related li .border .limiter {}
+    .postsbody .related li .border .limiter img {
+        width: 55px;
+        height: auto;
+    }
+    .videoarea ul li {
+        float: none;
+        width: 100%;
+        height: 52px;
+        margin: 0 2px;
+        overflow: hidden;
+        margin-bottom: 5px
+    }
+    .videoarea ul li .fuck {
+        width: 80px;
+        height: 50px;
+        float: left;
+    }
+    .videoarea ul li img {
+        float: left;
+        width: 80px;
+        height: auto;
+        margin-bottom: 0
+    }
+    .videoarea ul li h2 {
+        font-size: 13px;
+        line-height: 13px;
+        position: inherit;
+        text-align: left;
+        margin-left: 85px;
+        width: auto;
+        background: #fff;
+        color: #333;
+        padding: 18px 6px;
+    }
+    .videoarea ul li {
+        float: none;
+        width: 100%;
+        border-bottom: 1px solid rgba(31, 30, 30, 0.14);
+        margin: 0 2px;
+        overflow: hidden;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+    }
+    .animeseries ul li .title {
+        top: -25px;
+    }
+    .arealinker .boxdownload .liner {
+        width: 100%;
+        margin: 0;
+    }
+    .mobilesearch {
+        display: block;
+        overflow: hidden;
+        background: #171717;
+        padding: 4px;
+    }
+    .mobilesearch #searchform {
+        margin: 0 auto;
+        width: 99%;
+        background: #171717;
+        padding: 6px;
+    }
+    .mobilesearch #searchform #s {
+        border: 0;
+        background: none;
+        font-family: tahoma;
+        width: 84%;
+        padding: 3px;
+        color: #fff
+    }
+    .mobilesearch #searchform .searchbottom {
+        border: 0;
+        font-family: tahoma;
+        background: #333;
+        color: #999;
+        padding: 3px 8px;
+    }
+    .mobileads {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .mobileads .ads {
+        margin: 0 auto;
+    }
+    .mobileadstop {
+        display: block;
+    }
+    .mobileadstop .adstop {
+        width: 300px;
+        margin: 0 auto;
+    }
+    .mobileadsbottom {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .mobileadsbottom .adsbottom {
+        width: 300px;
+        margin: 0 auto;
+    }
+    .rekomendasi {
+        /* margin-left: 10px; */
+        /* margin-right: 10px; */
+    }
+    .postsbody .related li .border {
+        float: left;
+        padding-right: 10px;
+    }
+    .postsbody .related li .rights {
+        background: none;
+        color: #000;
+    }
+    .postsbody .related li .rights .title a {
+        color: #000;
+    }
+    .arealinker {
+        padding: 0
+    }
+}
+
+.postsbody .related li:hover {
+    background: #f7f4f4;
+}
+
+.result ul li:hover {
+    background: #f7f4f4;
+}
+
+h2.screen-reader-text {
+    display: none;
+}
+
+.pagination .nav-links span.page-numbers.current {
+    padding: 10px;
+    display: block;
+    float: left;
+    padding: 5px 10px;
+    color: #fff;
+    background: #e97991;
+    border: 1px solid #e97991;
+    font-weight: 400;
+}
+
+.pagination .nav-links a.page-numbers {
+    padding: 10px;
+    display: block;
+    float: left;
+    color: #fff;
+    padding: 5px 10px;
+    color: #fff;
+    border: 1px solid transparent;
+    font-weight: 400;
+}
+
+.pagination .nav-links span.page-numbers.dots {
+    display: none;
+}
+
+nav.navigation.pagination {
+    /* padding: 0; */
+    /* margin: 0; */
+}
+#main-menu form #s::placeholder {
+    color:#d6d4d4;
+}
+.pagineps {
+    padding: 15px;
+    background: #e97991;
+    display: block;
+    height: 15px;
+}
+
+.pagineps a.pagileft {
+    float: left;
+    color: #fff;
+}
+
+.pagineps a.pagiright {
+    float: right;
+    color: #fff;
+}
+
+.wp-night-mode-on {
+  background-color: #1f1f1f;
+}
+.wp-night-mode-on .eropost {
+  background: #464646;
+  color: #fff;
+}
+.wp-night-mode-on .eropost:hover {
+  background: #383838;
+}
+.wp-night-mode-on .eropost .eroinfo h2 a {
+  color: #fff;
+}
+.wp-night-mode-on #sidebar_right .side ul li {
+  color: #000;
+  background: #464646;
+}
+.wp-night-mode-on .videoarea {
+  background: #464646;
+}
+.wp-night-mode-on .videoarea a h2 {
+  background: transparent !important;
+  color: #fff;
+}
+.wp-night-mode-on ul.related1 {
+  background: #464646;
+}
+.wp-night-mode-on ul.related1 li:hover {
+  background: #383838;
+}
+.wp-night-mode-on ul.related1 li .nf h2 a {
+  color: #fff;
+}
+.wp-night-mode-on ul.related1 li .rights1 .title1 a, .wp-night-mode-on ul.related1 li .rights1 span, .wp-night-mode-on ul.related1 li .rights1 p {
+  color: #fff;
+}
+.wp-night-mode-on #footer {
+  color: #fff;
+}
+.wp-night-mode-on .postsbody {
+  background: transparent !important;
+}
+.wp-night-mode-on .postsbody .headpost .newzone {
+  background: #404040;
+}
+.wp-night-mode-on .postsbody .headpost .newzone .fb-like {
+  color: #fff;
+}
+.wp-night-mode-on .postsbody #show-stream {
+  background: #202020;
+}
+.wp-night-mode-on .postsbody .genres {
+  background: #363636;
+}
+.wp-night-mode-on .postsbody .genres ul li {
+  color: #fff;
+}
+.wp-night-mode-on .postsbody .genres ul li a {
+  color: #fff;
+}
+.wp-night-mode-on .postsbody .contentpost {
+  background: #363636;
+  color: #fff;
+}
+.wp-night-mode-on .postsbody .arealinker {
+  background: #363636;
+}
+.wp-night-mode-on .classbg {
+  background: #363636;
+}
+.wp-night-mode-on .classbg ul.related {
+  background: #363636;
+}
+.wp-night-mode-on .classbg ul.related li .title a {
+  color: #fff;
+}
+.wp-night-mode-on .classbg ul.related li:hover {
+  background: #323232;
+}
+.wp-night-mode-on .classbg ul.related li:hover .title a {
+  color: #fff;
+}
+.wp-night-mode-on .commentarea {
+  background: #363636;
+}
+.wp-night-mode-on .result {
+  background: #404040 !important;
+}
+.wp-night-mode-on .result ul li:hover {
+  background: #363636;
+}
+.wp-night-mode-on .result ul li .top h2 a {
+  color: #fff;
+}
+.wp-night-mode-on .result ul li .top .desc {
+  color: #fff;
+}
+.wp-night-mode-on .animelist {
+  background: #363636;
+}
+.wp-night-mode-on .animelist #a-z .letter-group .letter-cell a {
+  color: #fff;
+}
+.wp-night-mode-on .animelist #a-z .letter-group .row-cells .title-cell a {
+  color: #fff;
+}
+.wp-night-mode-on .ero .leftarea {
+    border: 1px solid #1f1f1f;
+}
+.theme-switch {
+  float: right;
+  padding: 10px 15px;
+}
+.theme-switch .wpnm-button.style-3 {
+  height: 7em;
+}
+.theme-switch .wpnm-button.style-3 .wpnm-button-circle {
+  height: 5em;
+}
