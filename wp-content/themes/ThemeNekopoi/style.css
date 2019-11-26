@@ -210,7 +210,7 @@ p {
 
 body {
     color: #333;
-    background-image: url(wp-content/themes/ThemeNekopoi/images/MaskotLEFT.svg), url(wp-content/themes/ThemeNekopoi/images/MaskotRIGHT.svg);
+    background-image: url(/wp-content/themes/ThemeNekopoi/images/MaskotLEFT.svg), url(/wp-content/themes/ThemeNekopoi/images/MaskotRIGHT.svg);
     background-size: auto auto, auto auto;
     background-repeat: no-repeat;
     background-position: left center, right center;
@@ -280,7 +280,7 @@ body {
 
 .mobileads {
     display: none;
-    background: url("wp-content/uploads/2016/06/adsmobile.png");
+    background: url("/wp-content/uploads/2016/06/adsmobile.png");
     height: 60px;
     width: 100%;
     background-size: cover;
@@ -293,7 +293,7 @@ body {
 
 .mobileadstop {
     display: none;
-    background: url("wp-content/uploads/2016/06/adsmobiletop.png");
+    background: url("/wp-content/uploads/2016/06/adsmobiletop.png");
     height: 60px;
     width: 320px;
     margin: 10px auto;
@@ -308,7 +308,7 @@ body {
 
 .mobileadsbottom {
     display: none;
-    background: url("wp-content/uploads/2016/06/adsmobilebottom.png");
+    background: url("/wp-content/uploads/2016/06/adsmobilebottom.png");
     height: 250px;
     width: 320px;
     margin: auto;
@@ -458,7 +458,7 @@ body {
     width: 728px;
     height: 90px;
     margin: 13px auto;
-    background: url("wp-content/uploads/2016/06/topbg.png");
+    background: url("/wp-content/uploads/2016/06/topbg.png");
 }
 
 .adsgen .ads .widgettitle {
@@ -479,7 +479,7 @@ body {
     width: 760px;
     height: 90px;
     margin: 13px auto;
-    background: url("wp-content/uploads/2016/06/adsbottompagenav.png");
+    background: url("/wp-content/uploads/2016/06/adsbottompagenav.png");
 }
 
 .adsgen1 .ads1 .widgettitle {
@@ -960,7 +960,7 @@ p {
 }
 body {
     color: #333;
-    background-image: url(wp-content/uploads/2016/06/bgleft3.png), url(wp-content/uploads/2016/06/bgright3.png);
+    background-image: url(/wp-content/uploads/2016/06/bgleft3.png), url(/wp-content/uploads/2016/06/bgright3.png);
     background-size: auto auto, auto auto;
     background-repeat: no-repeat;
     background-position: -40px 10px, 1000px 10px;
@@ -1020,7 +1020,7 @@ body {
 }
 .mobileads {
     display: none;
-    background: url("wp-content/uploads/2016/06/adsmobile.png");
+    background: url("/wp-content/uploads/2016/06/adsmobile.png");
     height: 60px;
     width: 100%;
     background-size: cover;
@@ -1031,7 +1031,7 @@ body {
 }
 .mobileadstop {
     display: none;
-    background: url("wp-content/uploads/2016/06/adsmobiletop.png");
+    background: url("/wp-content/uploads/2016/06/adsmobiletop.png");
     height: 60px;
     width: 320px;
     margin: 10px auto;
@@ -1044,7 +1044,7 @@ body {
 }
 .mobileadsbottom {
     display: none;
-    background: url("wp-content/uploads/2016/06/adsmobilebottom.png");
+    background: url("/wp-content/uploads/2016/06/adsmobilebottom.png");
     height: 250px;
     width: 320px;
     margin: auto;
@@ -1168,7 +1168,7 @@ body {
     width: 728px;
     height: 90px;
     margin: 13px auto;
-    background: url("wp-content/uploads/2016/06/topbg.png");
+    background: url("/wp-content/uploads/2016/06/topbg.png");
 }
 .adsgen .ads .widgettitle {
     display: none;
